@@ -1,37 +1,28 @@
 import React, {Component} from 'react';
-import { View, Text, TextInput, Button, ScrollView, Switch } from 'react-native';
+import { View, Text, TextInput, Button, ScrollView, Switch, Image } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { AppLoading, Font } from 'expo';
+import Data from '../containers/data.json';
 
 class Home extends Component {
 	state = {
-		names: [
-			{'name': 'Ben', 'id': 15},
-			{'name': 'Susan', 'id': 32},
-			{'name': 'Robert', 'id': 3},
-			{'name': 'Mary', 'id': 4},
-			{'name': 'Daniel', 'id': 5},
-			{'name': 'Laura', 'id': 6},
-			{'name': 'John', 'id': 7},
-			{'name': 'Debra', 'id': 8},
-			{'name': 'Aron', 'id': 9},
-			{'name': 'Ann', 'id': 10},
-			{'name': 'Steve', 'id': 11},
-			{'name': 'Olivia', 'id': 12}
-		],
 		isReady: false,
-		toggled: false,
+		trueSwitchIsOn: true,
+    	falseSwitchIsOn: false
 	};
 
-	componentWillMount() {
-		(async() => {
-			await Font.loadAsync({
-				'lobster' : require('../../assets/fonts/lobster-two.italic.ttf')
-			});
+	async componentWillMount() {
+		await Font.loadAsync({
+			'lobster' : require('../../assets/fonts/lobster-two.italic.ttf')
+		});
 
-			this.setState({isReady: true});
-		})();
+		this.setState({isReady: true});
 	}
+	
+	toggleSwitch1 = (value) => {
+      this.setState({ trueSwitchIsOn: value })
+      console.log(value);
+    }
 
 	render() {
 		if (!this.state.isReady) {
@@ -42,23 +33,29 @@ class Home extends Component {
 				<View style={styles.headerContainer}>
 					<Text style={styles.headerTitle}>Elige el nivel</Text>
 				</View>
-				<View style={styles.mainContainer}>
-					<ScrollView>
+				<View >
+				<ScrollView>
+                 	<View style={styles.mainContainer}>
 		               {
-		                  this.state.names.map((item, index) => (
-		                     <View key={item.id}>
-		                        <Text>{item.name}</Text>
-		                     </View>
+		                  Data.palabras.map((item, index) => (
+		                       <Image
+		                       		key={index}
+		                       		style={styles.circle}
+						        	source={require('../../assets/img/selectlevelback.png')}
+						       	>
+						       		<Text style={styles.textCircle}>{index}</Text>
+						       	</Image>
 		                  ))
 		               }
-	            	</ScrollView>
+                 	</View>
+            	</ScrollView>
 				</View>
 				<View style={styles.footerContainer}>
 					<Text style={styles.footerText}>Español</Text>
 					<Switch 
-					  onValueChange={this.setState({ toggled: false })} 
-					  value={ this.state.toggled } 
-					/> 
+					  onValueChange={this.toggleSwitch1.bind(this)} 
+					  value={ this.state.trueSwitchIsOn } 
+					/>
 		            <Text style={styles.footerText}>English</Text>
 				</View>
 			</View>
@@ -72,10 +69,10 @@ const styles = {
         alignItems:'center',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        backgroundColor: 'green'
+        backgroundColor: '#fff'
     },
     headerContainer: {
-    	backgroundColor: 'red',
+    	backgroundColor: '#d7716d',
     	alignSelf: 'stretch',
     	justifyContent: 'center',
     	alignItems: 'center',
@@ -84,16 +81,28 @@ const styles = {
     headerTitle: {
     	fontFamily: 'lobster',
     	color: 'white',
+    	flexDirection: 'column',
     	fontSize: 40
     },
     mainContainer: {
-    	backgroundColor: 'pink',
+    	backgroundColor: '#fff',
     	alignSelf: 'stretch',
     	alignItems: 'center',
-    	flex: 1,
+    	flexDirection: 'row',
+    },
+    circle: {
+    	width: 80, 
+    	height: 80,
+    	padding: 20,
+    },
+    textCircle: {
+    	padding: 30,
+    	fontFamily: 'lobster',
+    	fontSize: 25,
+    	color: '#fff'
     },
     footerContainer: {
-		backgroundColor: 'red',
+		backgroundColor: '#d7716d',
     	alignSelf: 'stretch',
     	flexDirection: 'row',
     	justifyContent: 'space-between',
@@ -102,7 +111,8 @@ const styles = {
     	padding: 10
     },
     footerText: {
-    	color: 'white'
+    	color: 'white',
+    	fontSize: 20
     }
 };
 
