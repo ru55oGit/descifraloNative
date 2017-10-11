@@ -1,5 +1,14 @@
 import React, {Component} from 'react';
-import { View, Text, TextInput, Button, ScrollView, Switch, Image } from 'react-native';
+import { View,
+         Text,
+         TextInput, 
+         Button, 
+         ScrollView, 
+         Switch, 
+         Image,
+         FlatList,
+         ListItem
+} from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { AppLoading, Font } from 'expo';
 import Data from '../containers/data.json';
@@ -33,23 +42,20 @@ class Home extends Component {
 				<View style={styles.headerContainer}>
 					<Text style={styles.headerTitle}>Elige el nivel</Text>
 				</View>
-				<View >
-				<ScrollView>
-                 	<View style={styles.mainContainer}>
-		               {
-		                  Data.palabras.map((item, index) => (
-		                       <Image
-		                       		key={index}
-		                       		style={styles.circle}
-						        	source={require('../../assets/img/selectlevelback.png')}
-						       	>
-						       		<Text style={styles.textCircle}>{index}</Text>
-						       	</Image>
-		                  ))
-		               }
-                 	</View>
-            	</ScrollView>
-				</View>
+                <View>
+                    <FlatList
+                        data={Data.palabras}
+                        numColumns={4}
+                        style={{alignSelf: 'stretch'}}
+                        renderItem={({item, index}) => 
+                            <Image key={index} 
+                                   style={styles.circle}
+                                   source={require('../../assets/img/selectlevelback.png')}>
+                                <Text style={styles.textCircle}>{index+1}</Text>
+                            </Image>
+                        }
+                    />
+                </View>
 				<View style={styles.footerContainer}>
 					<Text style={styles.footerText}>Español</Text>
 					<Switch 
@@ -90,16 +96,24 @@ const styles = {
     	alignItems: 'center',
     	flexDirection: 'row',
     },
+    flatListStyles: {
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'stretch'
+    },
     circle: {
     	width: 80, 
     	height: 80,
     	padding: 20,
     },
     textCircle: {
-    	padding: 30,
+        paddingRight: 5,
     	fontFamily: 'lobster',
-    	fontSize: 25,
-    	color: '#fff'
+    	fontSize: 23,
+    	color: '#fff',
+        textAlign: 'center'
     },
     footerContainer: {
 		backgroundColor: '#d7716d',
