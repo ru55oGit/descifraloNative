@@ -16,8 +16,7 @@ import Data from '../containers/data.json';
 class Home extends Component {
 	state = {
 		isReady: false,
-		trueSwitchIsOn: true,
-    	falseSwitchIsOn: false
+		switchState: true
 	};
 
 	async componentWillMount() {
@@ -29,7 +28,7 @@ class Home extends Component {
 	}
 	
 	toggleSwitch1 = (value) => {
-      this.setState({ trueSwitchIsOn: value })
+      this.setState({ switchState: value })
       console.log(value);
     }
 
@@ -42,25 +41,29 @@ class Home extends Component {
 				<View style={styles.headerContainer}>
 					<Text style={styles.headerTitle}>Elige el nivel</Text>
 				</View>
-                <View>
+                <ScrollView>
                     <FlatList
                         data={Data.palabras}
                         numColumns={4}
                         style={{alignSelf: 'stretch'}}
+                        keyExtractor={item => item.adivinanzas}
                         renderItem={({item, index}) => 
                             <Image key={index} 
                                    style={styles.circle}
                                    source={require('../../assets/img/selectlevelback.png')}>
-                                <Text style={styles.textCircle}>{index+1}</Text>
+                                <Text style={styles.textCircle} onPress={() => Actions.splash()}>{index+1}</Text>
                             </Image>
                         }
                     />
-                </View>
+                </ScrollView>
 				<View style={styles.footerContainer}>
 					<Text style={styles.footerText}>Español</Text>
-					<Switch 
+					<Switch
+                      thumbTintColor="#ffffff"
+                      tintColor="#cccccc"
+                      onTintColor="#cccccc"
 					  onValueChange={this.toggleSwitch1.bind(this)} 
-					  value={ this.state.trueSwitchIsOn } 
+					  value={ this.state.switchState } 
 					/>
 		            <Text style={styles.footerText}>English</Text>
 				</View>
@@ -78,7 +81,7 @@ const styles = {
         backgroundColor: '#fff'
     },
     headerContainer: {
-    	backgroundColor: '#d7716d',
+    	backgroundColor: '#cb4e48',
     	alignSelf: 'stretch',
     	justifyContent: 'center',
     	alignItems: 'center',
@@ -109,14 +112,13 @@ const styles = {
     	padding: 20,
     },
     textCircle: {
-        paddingRight: 5,
     	fontFamily: 'lobster',
-    	fontSize: 23,
+    	fontSize: 26,
     	color: '#fff',
         textAlign: 'center'
     },
     footerContainer: {
-		backgroundColor: '#d7716d',
+		backgroundColor: '#cb4e48',
     	alignSelf: 'stretch',
     	flexDirection: 'row',
     	justifyContent: 'space-between',

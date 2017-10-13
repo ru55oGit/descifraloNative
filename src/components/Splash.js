@@ -6,7 +6,7 @@ const Splash = () => {
 	return(
 		<View style={styles.containerSectionStyle}>
 			<Text>Splash</Text>
-			<Button onPress={() => Actions.home_bucket()} title="Ir a home">Ir a home</Button>
+			<Button onPress={() => Actions.game_bucket()} title="Ir a home">Ir a home</Button>
 		</View>
 	);
 };

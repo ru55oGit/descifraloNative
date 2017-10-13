@@ -7,7 +7,7 @@ const RouterComponent = () => {
 	return (
 		<Router>
 	        <Scene key="splash" component={Splash} hideNavBar={true} sceneStyle={{ paddingTop: 30 }}/>
-	        <Scene key="home_bucket" >
+	        <Scene key="game_bucket" >
 	        	<Scene key="home" component={Home} hideNavBar={true} sceneStyle={{ paddingTop: 30 }}/>
 	        </Scene>
 		</Router>
