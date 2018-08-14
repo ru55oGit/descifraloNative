@@ -5,24 +5,26 @@ import {
     ScrollView,
     Image,
     Dimensions,
-    Switch,
-    Platform,
-    ImageBackground
+    Switch
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { AppLoading, Font } from 'expo';
 
-import Data from '../../assets/adivinanzas.json';
+import { adivinanzas } from '../imageComponent/adivinanzas.js';
+import { logos } from '../imageComponent/logos.js';
+import { peliculas } from '../imageComponent/peliculas.js';
+import { famosos } from '../imageComponent/famosos.js';
+import { emojis } from '../imageComponent/emojis.js';
+import { escudos } from '../imageComponent/escudos.js';
+import { sombras } from '../imageComponent/sombras.js';
 
 var { width } = Dimensions.get('window');
 var half_width = width/2;
-const aleaImg = Data.listado[1].pathImg;
-
 
 class Categories extends Component {
     state = {
         isReady: false,
-        rand: 1
+        rand: 130
     }
     
     async componentWillMount() {
@@ -47,11 +49,10 @@ class Categories extends Component {
                 <View style={styles.headerContainer}>
                     <Text style={styles.headerTitle}>Elige una categoría</Text>
                 </View>
-                <Text>{Data.listado[1].pathImg}</Text>
                 <ScrollView>
                     <View style={styles.rowContainer}>
                         <Image
-                            style={style.img}
+                            style={styles.img}
                             source={require('../../assets/img/aleatorio1.jpg')} />
                         <Image
                             style={styles.img}
@@ -63,12 +64,12 @@ class Categories extends Component {
                             source={require('../../assets/img/cat_acertijos.jpg')} />
                         <Image 
                             style={styles.img}
-                            source={require('../../assets/img/acertijos/adivinanzas'+20+'.jpg')} />
+                            source={adivinanzas(this.state.rand)} />
                     </View>
                     <View style={styles.rowContainer}>
                         <Image 
                             style={styles.img}
-                            source={require('../../assets/img/logos/marcas1.jpg')} />
+                            source={logos(this.state.rand)} />
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_logos.jpg')} />
@@ -79,12 +80,12 @@ class Categories extends Component {
                             source={require('../../assets/img/cat_peliculas.jpg')} />
                         <Image 
                             style={styles.img}
-                            source={require('../../assets/img/peliculas/peliculas1.jpg')} />
+                            source={peliculas(this.state.rand)} />
                     </View>
                     <View style={styles.rowContainer}>
                         <Image 
                             style={styles.img}
-                            source={require('../../assets/img/comosellama/comosellama1.jpg')} />
+                            source={famosos(this.state.rand)} />
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_comosellama.jpg')} />
@@ -95,12 +96,12 @@ class Categories extends Component {
                             source={require('../../assets/img/cat_emojis.jpg')} />
                         <Image 
                             style={styles.img}
-                            source={require('../../assets/img/emojis/emojis1.jpg')} />
+                            source={emojis(this.state.rand)} />
                     </View>
                     <View style={styles.rowContainer}>
                         <Image 
                             style={styles.img}
-                            source={require('../../assets/img/escudos/escudos1.jpg')} />
+                            source={escudos(this.state.rand)} />
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_logosdeportes.jpg')} />
@@ -111,7 +112,7 @@ class Categories extends Component {
                             source={require('../../assets/img/cat_shadows.jpg')} />
                         <Image 
                             style={styles.img}
-                            source={require('../../assets/img/sombras/shadows1.jpg')} />
+                            source={sombras(this.state.rand)} />
                     </View>
                 </ScrollView>
                 <View style={styles.footerContainer}>

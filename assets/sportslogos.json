@@ -1,0 +1,590 @@
+{
+  "listado": [
+    {
+    },
+    {
+      "respuesta": "Cleveland|Cavaliers",
+      "solucion":""
+    },
+    {
+      "respuesta": "New England|Patriots",
+      "solucion":""
+    },
+    {
+      "respuesta": "New York|Yankees",
+      "solucion":""
+    },
+    {
+      "respuesta": "Montreal|Canadiens",
+      "solucion":""
+    },
+    {
+      "respuesta": "Los Angeles|Galaxy",
+      "solucion":""
+    },
+    {
+      "respuesta": "Golden State|Warriors",
+      "solucion":""
+    },
+    {
+      "respuesta": "Philadelphia|Eagles",
+      "solucion":""
+    },
+    {
+      "respuesta": "Los Angeles|Dodgers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Edmonton|Oilers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Toronto|FC",
+      "solucion":""
+    },
+    {
+      "respuesta": "Los Angeles|Lakers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Dallas|Cowboys",
+      "solucion":""
+    },
+    {
+      "respuesta": "Chicago|Cubs",
+      "solucion":""
+    },
+    {
+      "respuesta": "Pittsburgh|Penguins",
+      "solucion":""
+    },
+    {
+      "respuesta": "New York|Red Bulls",
+      "solucion":""
+    },
+    {
+      "respuesta": "Boston|Celtics",
+      "solucion":""
+    },
+    {
+      "respuesta": "Minnesota|Vikings",
+      "solucion":""
+    },
+    {
+      "respuesta": "Boston|Red Sox",
+      "solucion":""
+    },
+    {
+      "respuesta": "Toronto|Maple Leafs",
+      "solucion":""
+    },
+    {
+      "respuesta": "Seattle|Sounders FC",
+      "solucion":""
+    },
+    {
+      "respuesta": "Oklahoma|City Thunder",
+      "solucion":""
+    },
+    {
+      "respuesta": "Pittsburgh|Steelers",
+      "solucion":""
+    },
+    {
+      "respuesta": "New York|Mets",
+      "solucion":""
+    },
+    {
+      "respuesta": "Boston|Bruins",
+      "solucion":""
+    },
+    {
+      "respuesta": "New York|City FC",
+      "solucion":""
+    },
+    {
+      "respuesta": "San Antonio|Spurs",
+      "solucion":""
+    },
+    {
+      "respuesta": "Seattle|Seahawks",
+      "solucion":""
+    },
+    {
+      "respuesta": "Houston|Astros",
+      "solucion":""
+    },
+    {
+      "respuesta": "New York|Rangers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Montreal|Impact",
+      "solucion":""
+    },
+    {
+      "respuesta": "Houston|Rockets",
+      "solucion":""
+    },
+    {
+      "respuesta": "Oakland|Raiders",
+      "solucion":""
+    },
+    {
+      "respuesta": "Saint Louis|Cardinals",
+      "solucion":""
+    },
+    {
+      "respuesta": "Chicago|Blackhawks",
+      "solucion":""
+    },
+    {
+      "respuesta": "Portland|Timbers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Toronto|Raptors",
+      "solucion":""
+    },
+    {
+      "respuesta": "Jacksonville|Jaguars",
+      "solucion":""
+    },
+    {
+      "respuesta": "Toronto|Blue Jays",
+      "solucion":""
+    },
+    {
+      "respuesta": "Vancouver|Canucks",
+      "solucion":""
+    },
+    {
+      "respuesta": "Orlando City|Soccer Club",
+      "solucion":""
+    },
+    {
+      "respuesta": "New York|Knicks",
+      "solucion":""
+    },
+    {
+      "respuesta": "Green Bay|Packers",
+      "solucion":""
+    },
+    {
+      "respuesta": "LA Angels|of Anaheim",
+      "solucion":""
+    },
+    {
+      "respuesta": "Winnipeg|Jets",
+      "solucion":""
+    },
+    {
+      "respuesta": "DC|United",
+      "solucion":""
+    },
+    {
+      "respuesta": "Miami|Heat",
+      "solucion":""
+    },
+    {
+      "respuesta": "Atlanta|Falcons",
+      "solucion":""
+    },
+    {
+      "respuesta": "San Francisco|Giants",
+      "solucion":""
+    },
+    {
+      "respuesta": "Calgary|Flames",
+      "solucion":""
+    },
+    {
+      "respuesta": "Columbus|Crew SC",
+      "solucion":""
+    },
+    {
+      "respuesta": "Chicago|Bulls",
+      "solucion":""
+    },
+    {
+      "respuesta": "San Francisco|49ers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Atlanta|Braves",
+      "solucion":""
+    },
+    {
+      "respuesta": "Philadelphia|Flyers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Real|Salt Lake",
+      "solucion":""
+    },
+    {
+      "respuesta": "Philadelphia|76ers",
+      "solucion":""
+    },
+    {
+      "respuesta": "New York|Giants",
+      "solucion":""
+    },
+    {
+      "respuesta": "Philadelphia|Phillies",
+      "solucion":""
+    },
+    {
+      "respuesta": "Detroit|Red Wings",
+      "solucion":""
+    },
+    {
+      "respuesta": "FC Dallas",
+      "solucion":""
+    },
+    {
+      "respuesta": "Los Angeles|Clippers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Carolina|Panthers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Milwaukee|Brewers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Milwaukee|Bucks",
+      "solucion":""
+    },
+    {
+      "respuesta": "Denver|Broncos",
+      "solucion":""
+    },
+    {
+      "respuesta": "Texas|Rangers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Los Angeles|Kings",
+      "solucion":""
+    },
+    {
+      "respuesta": "Chicago|Fire",
+      "solucion":""
+    },
+    {
+      "respuesta": "Detroit|Pistons",
+      "solucion":""
+    },
+    {
+      "respuesta": "Tennessee|Titans",
+      "solucion":""
+    },
+    {
+      "respuesta": "Chicago|White Sox",
+      "solucion":""
+    },
+    {
+      "respuesta": "New York|Islanders",
+      "solucion":""
+    },
+    {
+      "respuesta": "Sporting|Kansas City",
+      "solucion":""
+    },
+    {
+      "respuesta": "Minnesota|Timberwolves",
+      "solucion":""
+    },
+    {
+      "respuesta": "Los Angeles|Rams",
+      "solucion":""
+    },
+    {
+      "respuesta": "Baltimore|Orioles",
+      "solucion":""
+    },
+    {
+      "respuesta": "Anaheim|Ducks",
+      "solucion":""
+    },
+    {
+      "respuesta": "Houston|Dynamo",
+      "solucion":""
+    },
+    {
+      "respuesta": "New Orleans|Pelicans",
+      "solucion":""
+    },
+    {
+      "respuesta": "Cleveland|Browns",
+      "solucion":""
+    },
+    {
+      "respuesta": "Detroit|Tigers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Tampa Bay|Lightning",
+      "solucion":""
+    },
+    {
+      "respuesta": "New England|Revolution",
+      "solucion":""
+    },
+    {
+      "respuesta": "Portland|Trail Blazers",
+      "solucion":""
+    },
+    {
+      "respuesta": "New Orleans|Saints",
+      "solucion":""
+    },
+    {
+      "respuesta": "Cleveland|Indians",
+      "solucion":""
+    },
+    {
+      "respuesta": "Washington|Capitals",
+      "solucion":""
+    },
+    {
+      "respuesta": "San Jose|Earthquakes",
+      "solucion":""
+    },
+    {
+      "respuesta": "Washington|Wizards",
+      "solucion":""
+    },
+    {
+      "respuesta": "Chicago|Bears",
+      "solucion":""
+    },
+    {
+      "respuesta": "Pittsburgh|Pirates",
+      "solucion":""
+    },
+    {
+      "respuesta": "Ottawa|Senators",
+      "solucion":""
+    },
+    {
+      "respuesta": "Colorado|Rapids",
+      "solucion":""
+    },
+    {
+      "respuesta": "Brooklyn Nets",
+      "solucion":""
+    },
+    {
+      "respuesta": "Buffalo|Bills",
+      "solucion":""
+    },
+    {
+      "respuesta": "Kansas City|Royals",
+      "solucion":""
+    },
+    {
+      "respuesta": "New Jersey|Devils",
+      "solucion":""
+    },
+    {
+      "respuesta": "Philadelphia|Union",
+      "solucion":""
+    },
+    {
+      "respuesta": "Dallas|Mavericks",
+      "solucion":""
+    },
+    {
+      "respuesta": "Kansas City|Chiefs",
+      "solucion":""
+    },
+    {
+      "respuesta": "Nashville|Predators",
+      "solucion":""
+    },
+    {
+      "respuesta": "San Jose|Sharks",
+      "solucion":""
+    },
+    {
+      "respuesta": "Los Angeles|FC",
+      "solucion":""
+    },
+    {
+      "respuesta": "Indiana|Pacers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Baltimore|Ravens",
+      "solucion":""
+    },
+    {
+      "respuesta": "San Diego|Padres",
+      "solucion":""
+    },
+    {
+      "respuesta": "Saint Louis|Blues",
+      "solucion":""
+    },
+    {
+      "respuesta": "Atlanta|United FC",
+      "solucion":""
+    },
+    {
+      "respuesta": "Sacramento|Kings",
+      "solucion":""
+    },
+    {
+      "respuesta": "Detroit|Lions",
+      "solucion":""
+    },
+    {
+      "respuesta": "Miami|Marlins",
+      "solucion":""
+    },
+    {
+      "respuesta": "Vegas|Golden Knights",
+      "solucion":""
+    },
+    {
+      "respuesta": "Club Deportivo|Chivas USA",
+      "solucion":""
+    },
+    {
+      "respuesta": "Utah|Jazz",
+      "solucion":""
+    },
+    {
+      "respuesta": "Washington|Redskins",
+      "solucion":""
+    },
+    {
+      "respuesta": "Seattle|Mariners",
+      "solucion":""
+    },
+    {
+      "respuesta": "Buffalo|Sabres",
+      "solucion":""
+    },
+    {
+      "respuesta": "Minnesota|United FC",
+      "solucion":""
+    },
+    {
+      "respuesta": "Phoenix|Suns",
+      "solucion":""
+    },
+    {
+      "respuesta": "Arizona|Cardinals",
+      "solucion":""
+    },
+    {
+      "respuesta": "Minnesota|Twins",
+      "solucion":""
+    },
+    {
+      "respuesta": "Minnesota|Wild",
+      "solucion":""
+    },
+    {
+      "respuesta": "Denver|Nuggets",
+      "solucion":""
+    },
+    {
+      "respuesta": "Los Angeles|Chargers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Cincinnati|Reds",
+      "solucion":""
+    },
+    {
+      "respuesta": "Colorado|Avalanche",
+      "solucion":""
+    },
+    {
+      "respuesta": "Atlanta|Hawks",
+      "solucion":""
+    },
+    {
+      "respuesta": "Miami|Dolphins",
+      "solucion":""
+    },
+    {
+      "respuesta": "Washington|Nationals",
+      "solucion":""
+    },
+    {
+      "respuesta": "Florida|Panthers",
+      "solucion":""
+    },
+    {
+      "respuesta": "Orlando|Magic",
+      "solucion":""
+    },
+    {
+      "respuesta": "Houston|Texans",
+      "solucion":""
+    },
+    {
+      "respuesta": "Colorado|Rockies",
+      "solucion":""
+    },
+    {
+      "respuesta": "Carolina|Hurricanes",
+      "solucion":""
+    },
+    {
+      "respuesta": "Memphis|Grizzlies",
+      "solucion":""
+    },
+    {
+      "respuesta": "New York|Jets",
+      "solucion":""
+    },
+    {
+      "respuesta": "Arizona|Diamondbacks",
+      "solucion":""
+    },
+    {
+      "respuesta": "Columbus|Blue Jackets",
+      "solucion":""
+    },
+    {
+      "respuesta": "Charlotte|Hornets",
+      "solucion":""
+    },
+    {
+      "respuesta": "Indianapolis|Colts",
+      "solucion":""
+    },
+    {
+      "respuesta": "Tampa Bay|Rays",
+      "solucion":""
+    },
+    {
+      "respuesta": "Arizona|Coyotes",
+      "solucion":""
+    },
+    {
+      "respuesta": "Cincinnati|Bengals",
+      "solucion":""
+    },
+    {
+      "respuesta": "Oakland|Athletics",
+      "solucion":""
+    },
+    {
+      "respuesta": "Dallas|Stars",
+      "solucion":""
+    },
+    {
+      "respuesta": "Tampa Bay|Buccaneers",
+      "solucion":""
+    }
+  ]
+}

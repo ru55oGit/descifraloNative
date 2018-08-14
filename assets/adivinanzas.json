@@ -1,1685 +1,1126 @@
-{
-    "listado": [{
+{"listado": [
+  {
 
-        }, {
-            "respuesta": "lunatico",
-            "solucion": "https://www.youtube.com/watch?v=vvnVXZMaWyI",
-            "nivel": "1",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas1.jpg')"
-        },
-        {
-            "respuesta": "estomago",
-            "solucion": "https://www.youtube.com/watch?v=oQWvQAi7Xu0",
-            "nivel": "2",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas2.jpg')"
-        },
-        {
-            "respuesta": "ingenio",
-            "solucion": "https://www.youtube.com/watch?v=JizsMU7B_OM",
-            "nivel": "3",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas3.jpg')"
-        },
-        {
-            "respuesta": "pinocho",
-            "solucion": "https://www.youtube.com/watch?v=A-JzUW1zOoA",
-            "nivel": "4",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas4.jpg')"
-        },
-        {
-            "respuesta": "quincena",
-            "solucion": "https://www.youtube.com/watch?v=SNEvM-27UP8",
-            "nivel": "5",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas5.jpg')"
-        },
-        {
-            "respuesta": "pantalon",
-            "solucion": "https://www.youtube.com/watch?v=eJ5XPaBHkO0",
-            "nivel": "6",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas6.jpg')"
-        },
-        {
-            "respuesta": "enfadado",
-            "solucion": "https://www.youtube.com/watch?v=zIXf7bknqLU",
-            "nivel": "7",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas7.jpg')"
-        },
-        {
-            "respuesta": "bizcochuelo",
-            "solucion": "https://www.youtube.com/watch?v=I7FYYJYqZCg",
-            "nivel": "8",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas8.jpg')"
-        },
-        {
-            "respuesta": "entretenido",
-            "solucion": "https://www.youtube.com/watch?v=mTuP1JPu0ZA",
-            "nivel": "9",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas9.jpg')"
-        },
-        {
-            "respuesta": "pantano",
-            "solucion": "https://www.youtube.com/watch?v=AG4iTXDF5n0",
-            "nivel": "10",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas10.jpg')"
-        },
-        {
-            "respuesta": "sombrilla",
-            "solucion": "https://www.youtube.com/watch?v=632BnneIx_E",
-            "nivel": "11",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas11.jpg')"
-        },
-        {
-            "respuesta": "sorpresa",
-            "solucion": "https://www.youtube.com/watch?v=MpW7cZu2BpA",
-            "nivel": "12",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas12.jpg')"
-        },
-        {
-            "respuesta": "pepino",
-            "solucion": "https://youtu.be/b72Jspj-gaI",
-            "nivel": "13",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas13.jpg')"
-        },
-        {
-            "respuesta": "el gordo|y el flaco",
-            "solucion": "https://youtu.be/o_FlIF_ugZY",
-            "nivel": "14",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas14.jpg')"
-        },
-        {
-            "respuesta": "conocimiento",
-            "solucion": "https://youtu.be/IkKOhJRVuVI",
-            "nivel": "15",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas15.jpg')"
-        },
-        {
-            "respuesta": "revelar",
-            "solucion": "https://youtu.be/Yo3qyLk8t8k",
-            "nivel": "16",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas16.jpg')"
-        },
-        {
-            "respuesta": "me chupa|un huevo",
-            "solucion": "https://youtu.be/Zvcb6Wr5e-k",
-            "nivel": "17",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas17.jpg')"
-        },
-        {
-            "respuesta": "termometro",
-            "solucion": "https://youtu.be/C5F2dQ_ARFI",
-            "nivel": "18",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas18.jpg')"
-        },
-        {
-            "respuesta": "leer entre|lineas",
-            "solucion": "https://youtu.be/9syozBlt4LY",
-            "nivel": "19",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas19.jpg')"
-        },
-        {
-            "respuesta": "escama",
-            "solucion": "https://youtu.be/TDsy23r3olk",
-            "nivel": "20",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas20.jpg')"
-        },
-        {
-            "respuesta": "entrenadora",
-            "solucion": "https://youtu.be/5jjxkKnGIAk",
-            "nivel": "21",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas21.jpg')"
-        },
-        {
-            "respuesta": "llave|francesa",
-            "solucion": "https://youtu.be/GkQKdlQXf8E",
-            "nivel": "22",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas22.jpg')"
-        },
-        {
-            "respuesta": "fe de|erratas",
-            "solucion": "https://youtu.be/aV6YKtJWr3I",
-            "nivel": "23",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas23.jpg')"
-        },
-        {
-            "respuesta": "encubierto",
-            "solucion": "https://youtu.be/jmHXFhXxeLc",
-            "nivel": "24",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas24.jpg')"
-        },
-        {
-            "respuesta": "colaboracion",
-            "solucion": "https://youtu.be/9sRaYTvlqSU",
-            "nivel": "25",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas25.jpg')"
-        },
-        {
-            "respuesta": "confirma",
-            "solucion": "https://youtu.be/Yz3EXH4uqgc",
-            "nivel": "26",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas26.jpg')"
-        },
-        {
-            "respuesta": "pancarta",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas27.jpg')"
-        },
-        {
-            "respuesta": "el canal de|la mancha",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas28.jpg')"
-        },
-        {
-            "respuesta": "maniatico",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas29.jpg')"
-        },
-        {
-            "respuesta": "circulo|vicioso",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas30.jpg')"
-        },
-        {
-            "respuesta": "agua|oxigenada",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas31.jpg')"
-        },
-        {
-            "respuesta": "la torre|de pisa",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas32.jpg')"
-        },
-        {
-            "respuesta": "leche|cortada",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas33.jpg')"
-        },
-        {
-            "respuesta": "emparedado",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas34.jpg')"
-        },
-        {
-            "respuesta": "triangulo de|las bermudas",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas35.jpg')"
-        },
-        {
-            "respuesta": "circulo|polar artico",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas36.jpg')"
-        },
-        {
-            "respuesta": "guardar|bajo llave",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas37.jpg')"
-        },
-        {
-            "respuesta": "todo sobre|ruedas",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas38.jpg')"
-        },
-        {
-            "respuesta": "escalpelo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas39.jpg')"
-        },
-        {
-            "respuesta": "limonada",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas40.jpg')"
-        },
-        {
-            "respuesta": "florencia",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas41.jpg')"
-        },
-        {
-            "respuesta": "aire|comprimido",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas42.jpg')"
-        },
-        {
-            "respuesta": "ascensor",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas43.jpg')"
-        },
-        {
-            "respuesta": "cantero",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas44.jpg')"
-        },
-        {
-            "respuesta": "soldado",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas45.jpg')"
-        },
-        {
-            "respuesta": "berenjena",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas46.jpg')"
-        },
-        {
-            "respuesta": "vino blanco",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas47.jpg')"
-        },
-        {
-            "respuesta": "estetoscopio",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas48.jpg')"
-        },
-        {
-            "respuesta": "palometa",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas49.jpg')"
-        },
-        {
-            "respuesta": "cucharita",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas50.jpg')"
-        },
-        {
-            "respuesta": "mas vale tarde|que nunca",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas51.jpg')"
-        },
-        {
-            "respuesta": "analfabeta",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas52.jpg')"
-        },
-        {
-            "respuesta": "alfa romeo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas53.jpg')"
-        },
-        {
-            "respuesta": "climatizado",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas54.jpg')"
-        },
-        {
-            "respuesta": "comida|rapida",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas55.jpg')"
-        },
-        {
-            "respuesta": "camaleon",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas56.jpg')"
-        },
-        {
-            "respuesta": "fuego|cruzado",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas57.jpg')"
-        },
-        {
-            "respuesta": "votar en|blanco",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas58.jpg')"
-        },
-        {
-            "respuesta": "caleidoscopio",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas59.jpg')"
-        },
-        {
-            "respuesta": "polenta",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas60.jpg')"
-        },
-        {
-            "respuesta": "empanada",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas61.jpg')"
-        },
-        {
-            "respuesta": "resfrio",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas62.jpg')"
-        },
-        {
-            "respuesta": "picara",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas63.jpg')"
-        },
-        {
-            "respuesta": "emperador",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas64.jpg')"
-        },
-        {
-            "respuesta": "apila",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas65.jpg')"
-        },
-        {
-            "respuesta": "edad media",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas66.jpg')"
-        },
-        {
-            "respuesta": "canoso",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas67.jpg')"
-        },
-        {
-            "respuesta": "lenteja",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas68.jpg')"
-        },
-        {
-            "respuesta": "bolchevique",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas69.jpg')"
-        },
-        {
-            "respuesta": "paraguas",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas70.jpg')"
-        },
-        {
-            "respuesta": "carajo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas71.jpg')"
-        },
-        {
-            "respuesta": "cantantes",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas72.jpg')"
-        },
-        {
-            "respuesta": "impresa",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas73.jpg')"
-        },
-        {
-            "respuesta": "paciente",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas74.jpg')"
-        },
-        {
-            "respuesta": "negrita",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas75.jpg')"
-        },
-        {
-            "respuesta": "caracol",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas76.jpg')"
-        },
-        {
-            "respuesta": "coliflor",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas77.jpg')"
-        },
-        {
-            "respuesta": "mejor reir|que llorar",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas78.jpg')"
-        },
-        {
-            "respuesta": "dependencia",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas79.jpg')"
-        },
-        {
-            "respuesta": "porcelana",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas80.jpg')"
-        },
-        {
-            "respuesta": "sobrevolar",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas81.jpg')"
-        },
-        {
-            "respuesta": "verde",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas82.jpg')"
-        },
-        {
-            "respuesta": "viento en|popa",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas83.jpg')"
-        },
-        {
-            "respuesta": "sobrevivir",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas84.jpg')"
-        },
-        {
-            "respuesta": "microscopico",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas85.jpg')"
-        },
-        {
-            "respuesta": "corazonada",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas86.jpg')"
-        },
-        {
-            "respuesta": "epico",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas87.jpg')"
-        },
-        {
-            "respuesta": "tesoro",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas88.jpg')"
-        },
-        {
-            "respuesta": "sintaxis",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas89.jpg')"
-        },
-        {
-            "respuesta": "sin ton|ni son",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas90.jpg')"
-        },
-        {
-            "respuesta": "empezar",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas91.jpg')"
-        },
-        {
-            "respuesta": "rueda de|prensa",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas92.jpg')"
-        },
-        {
-            "respuesta": "jueves|santo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas93.jpg')"
-        },
-        {
-            "respuesta": "plano|inclinado",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas94.jpg')"
-        },
-        {
-            "respuesta": "desencuentro",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas95.jpg')"
-        },
-        {
-            "respuesta": "mal educado",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas96.jpg')"
-        },
-        {
-            "respuesta": "pariente",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas97.jpg')"
-        },
-        {
-            "respuesta": "pentagrama",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas98.jpg')"
-        },
-        {
-            "respuesta": "ni fu ni fa",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas99.jpg')"
-        },
-        {
-            "respuesta": "pilates",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas100.jpg')"
-        },
-        {
-            "respuesta": "envido",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas101.jpg')"
-        },
-        {
-            "respuesta": "real|envido",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas102.jpg')"
-        },
-        {
-            "respuesta": "falta|envido",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas103.jpg')"
-        },
-        {
-            "respuesta": "dios|mediante",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas104.jpg')"
-        },
-        {
-            "respuesta": "sincope",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas105.jpg')"
-        },
-        {
-            "respuesta": "singapur",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas106.jpg')"
-        },
-        {
-            "respuesta": "docena",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas107.jpg')"
-        },
-        {
-            "respuesta": "mate|cocido",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas108.jpg')"
-        },
-        {
-            "respuesta": "endosa",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas109.jpg')"
-        },
-        {
-            "respuesta": "postres|helados",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas110.jpg')"
-        },
-        {
-            "respuesta": "puente",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas111.jpg')"
-        },
-        {
-            "respuesta": "aruba",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas112.jpg')"
-        },
-        {
-            "respuesta": "casino",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas113.jpg')"
-        },
-        {
-            "respuesta": "todo bajo|control",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas114.jpg')"
-        },
-        {
-            "respuesta": "novela",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas115.jpg')"
-        },
-        {
-            "respuesta": "venado",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas116.jpg')"
-        },
-        {
-            "respuesta": "barcelona",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas117.jpg')"
-        },
-        {
-            "respuesta": "rio de|janeiro",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas118.jpg')"
-        },
-        {
-            "respuesta": "los angeles",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas119.jpg')"
-        },
-        {
-            "respuesta": "sevilla",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas120.jpg')"
-        },
-        {
-            "respuesta": "estados|unidos",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas121.jpg')"
-        },
-        {
-            "respuesta": "montevideo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas122.jpg')"
-        },
-        {
-            "respuesta": "australia",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas123.jpg')"
-        },
-        {
-            "respuesta": "paris",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas124.jpg')"
-        },
-        {
-            "respuesta": "malaga",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas125.jpg')"
-        },
-        {
-            "respuesta": "durazno",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas126.jpg')"
-        },
-        {
-            "respuesta": "venezuela",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas127.jpg')"
-        },
-        {
-            "respuesta": "curitiba",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas128.jpg')"
-        },
-        {
-            "respuesta": "mykonos",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas129.jpg')"
-        },
-        {
-            "respuesta": "monterrey",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas130.jpg')"
-        },
-        {
-            "respuesta": "cartagena",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas131.jpg')"
-        },
-        {
-            "respuesta": "asuncion",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas132.jpg')"
-        },
-        {
-            "respuesta": "rosario",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas133.jpg')"
-        },
-        {
-            "respuesta": "colombia",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas134.jpg')"
-        },
-        {
-            "respuesta": "noruega",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas135.jpg')"
-        },
-        {
-            "respuesta": "caracas",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas136.jpg')"
-        },
-        {
-            "respuesta": "san diego",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas137.jpg')"
-        },
-        {
-            "respuesta": "palma de|mallorca",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas138.jpg')"
-        },
-        {
-            "respuesta": "venado|tuerto",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas139.jpg')"
-        },
-        {
-            "respuesta": "capilla|del monte",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas140.jpg')"
-        },
-        {
-            "respuesta": "isla|margarita",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas141.jpg')"
-        },
-        {
-            "respuesta": "san|fernando",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas142.jpg')"
-        },
-        {
-            "respuesta": "arabia",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas143.jpg')"
-        },
-        {
-            "respuesta": "damasco",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas144.jpg')"
-        },
-        {
-            "respuesta": "tierra|del fuego",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas145.jpg')"
-        },
-        {
-            "respuesta": "mar del|plata",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas146.jpg')"
-        },
-        {
-            "respuesta": "olavarria",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas147.jpg')"
-        },
-        {
-            "respuesta": "sierra de|la ventana",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas148.jpg')"
-        },
-        {
-            "respuesta": "caleta|olivia",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas149.jpg')"
-        },
-        {
-            "respuesta": "lisboa",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas150.jpg')"
-        },
-        {
-            "respuesta": "barbados",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas151.jpg')"
-        },
-        {
-            "respuesta": "canada",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas152.jpg')"
-        },
-        {
-            "respuesta": "calamar",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas153.jpg')"
-        },
-        {
-            "respuesta": "pandemonio",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas154.jpg')"
-        },
-        {
-            "respuesta": "papagayo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas155.jpg')"
-        },
-        {
-            "respuesta": "mayordomo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas156.jpg')"
-        },
-        {
-            "respuesta": "calvario",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas157.jpg')"
-        },
-        {
-            "respuesta": "merienda",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas158.jpg')"
-        },
-        {
-            "respuesta": "monarca",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas159.jpg')"
-        },
-        {
-            "respuesta": "nomina",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas160.jpg')"
-        },
-        {
-            "respuesta": "mariguana",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas161.jpg')"
-        },
-        {
-            "respuesta": "pajaro",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas162.jpg')"
-        },
-        {
-            "respuesta": "repollo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas163.jpg')"
-        },
-        {
-            "respuesta": "remora",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas164.jpg')"
-        },
-        {
-            "respuesta": "recien|casados",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas165.jpg')"
-        },
-        {
-            "respuesta": "reglamenta",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas166.jpg')"
-        },
-        {
-            "respuesta": "testosterona",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas167.jpg')"
-        },
-        {
-            "respuesta": "pirata",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas168.jpg')"
-        },
-        {
-            "respuesta": "remar",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas169.jpg')"
-        },
-        {
-            "respuesta": "portero",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas170.jpg')"
-        },
-        {
-            "respuesta": "sanamente",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas171.jpg')"
-        },
-        {
-            "respuesta": "remodela",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas172.jpg')"
-        },
-        {
-            "respuesta": "resaltar",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas173.jpg')"
-        },
-        {
-            "respuesta": "arcabuz",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas174.jpg')"
-        },
-        {
-            "respuesta": "petalo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas175.jpg')"
-        },
-        {
-            "respuesta": "postiza",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas176.jpg')"
-        },
-        {
-            "respuesta": "piston",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas177.jpg')"
-        },
-        {
-            "respuesta": "premeditar",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas178.jpg')"
-        },
-        {
-            "respuesta": "monoculo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas179.jpg')"
-        },
-        {
-            "respuesta": "resorte",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas180.jpg')"
-        },
-        {
-            "respuesta": "platano",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas181.jpg')"
-        },
-        {
-            "respuesta": "sotana",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas182.jpg')"
-        },
-        {
-            "respuesta": "superfluo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas183.jpg')"
-        },
-        {
-            "respuesta": "tartamudo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas184.jpg')"
-        },
-        {
-            "respuesta": "silaba",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas185.jpg')"
-        },
-        {
-            "respuesta": "recorre",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas186.jpg')"
-        },
-        {
-            "respuesta": "tramposo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas187.jpg')"
-        },
-        {
-            "respuesta": "terremoto",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas188.jpg')"
-        },
-        {
-            "respuesta": "torpedo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas189.jpg')"
-        },
-        {
-            "respuesta": "taladra",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas190.jpg')"
-        },
-        {
-            "respuesta": "salpicadura",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas191.jpg')"
-        },
-        {
-            "respuesta": "aguacate",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas192.jpg')"
-        },
-        {
-            "respuesta": "alarma",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas193.jpg')"
-        },
-        {
-            "respuesta": "arroba",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas194.jpg')"
-        },
-        {
-            "respuesta": "velada",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas195.jpg')"
-        },
-        {
-            "respuesta": "solista",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas196.jpg')"
-        },
-        {
-            "respuesta": "viatico",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas197.jpg')"
-        },
-        {
-            "respuesta": "marron",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas198.jpg')"
-        },
-        {
-            "respuesta": "velocimetro",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas199.jpg')"
-        },
-        {
-            "respuesta": "tributo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas200.jpg')"
-        },
-        {
-            "respuesta": "barranco",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas201.jpg')"
-        },
-        {
-            "respuesta": "boliviano",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas202.jpg')"
-        },
-        {
-            "respuesta": "batidora",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas203.jpg')"
-        },
-        {
-            "respuesta": "reciente",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas204.jpg')"
-        },
-        {
-            "respuesta": "boa vista",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas205.jpg')"
-        },
-        {
-            "respuesta": "cachorro",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas206.jpg')"
-        },
-        {
-            "respuesta": "santa rosa",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas207.jpg')"
-        },
-        {
-            "respuesta": "recinto",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas208.jpg')"
-        },
-        {
-            "respuesta": "ampliamente",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas209.jpg')"
-        },
-        {
-            "respuesta": "margarita",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas210.jpg')"
-        },
-        {
-            "respuesta": "bastonazo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas211.jpg')"
-        },
-        {
-            "respuesta": "borracha",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas212.jpg')"
-        },
-        {
-            "respuesta": "barbuda",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas213.jpg')"
-        },
-        {
-            "respuesta": "boludo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas214.jpg')"
-        },
-        {
-            "respuesta": "camarada",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas215.jpg')"
-        },
-        {
-            "respuesta": "artesanalmente",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas216.jpg')"
-        },
-        {
-            "respuesta": "barbara",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas217.jpg')"
-        },
-        {
-            "respuesta": "alaska",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas218.jpg')"
-        },
-        {
-            "respuesta": "marsella",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas219.jpg')"
-        },
-        {
-            "respuesta": "osaka",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas220.jpg')"
-        },
-        {
-            "respuesta": "diametro",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas221.jpg')"
-        },
-        {
-            "respuesta": "acalorada",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas222.jpg')"
-        },
-        {
-            "respuesta": "sotano",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas223.jpg')"
-        },
-        {
-            "respuesta": "batahola",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas224.jpg')"
-        },
-        {
-            "respuesta": "malasia",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas225.jpg')"
-        },
-        {
-            "respuesta": "socorre",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas226.jpg')"
-        },
-        {
-            "respuesta": "anatomicamente",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas227.jpg')"
-        },
-        {
-            "respuesta": "colmar",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas228.jpg')"
-        },
-        {
-            "respuesta": "la paz",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas229.jpg')"
-        },
-        {
-            "respuesta": "ciudad del|cabo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas230.jpg')"
-        },
-        {
-            "respuesta": "cucuta",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas231.jpg')"
-        },
-        {
-            "respuesta": "panama",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas232.jpg')"
-        },
-        {
-            "respuesta": "potente",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas233.jpg')"
-        },
-        {
-            "respuesta": "margen",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas234.jpg')"
-        },
-        {
-            "respuesta": "pantalla",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas235.jpg')"
-        },
-        {
-            "respuesta": "diacono",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas236.jpg')"
-        },
-        {
-            "respuesta": "calibre",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas237.jpg')"
-        },
-        {
-            "respuesta": "bombacha",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas238.jpg')"
-        },
-        {
-            "respuesta": "tormenta",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas239.jpg')"
-        },
-        {
-            "respuesta": "soltero",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas240.jpg')"
-        },
-        {
-            "respuesta": "pupilas",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas241.jpg')"
-        },
-        {
-            "respuesta": "helsinki",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas242.jpg')"
-        },
-        {
-            "respuesta": "marchita",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas243.jpg')"
-        },
-        {
-            "respuesta": "milagroso",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas244.jpg')"
-        },
-        {
-            "respuesta": "varsovia",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas245.jpg')"
-        },
-        {
-            "respuesta": "parlamento",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas246.jpg')"
-        },
-        {
-            "respuesta": "calcuta",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas247.jpg')"
-        },
-        {
-            "respuesta": "camaron",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas248.jpg')"
-        },
-        {
-            "respuesta": "asfalto",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas249.jpg')"
-        },
-        {
-            "respuesta": "cuba",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas250.jpg')"
-        },
-        {
-            "respuesta": "cancun",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas251.jpg')"
-        },
-        {
-            "respuesta": "sierra leona",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas252.jpg')"
-        },
-        {
-            "respuesta": "osamenta",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas253.jpg')"
-        },
-        {
-            "respuesta": "resguardar",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas254.jpg')"
-        },
-        {
-            "respuesta": "piojo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas255.jpg')"
-        },
-        {
-            "respuesta": "relata",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas256.jpg')"
-        },
-        {
-            "respuesta": "campera",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas257.jpg')"
-        },
-        {
-            "respuesta": "soledad",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas258.jpg')"
-        },
-        {
-            "respuesta": "vibracion",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas259.jpg')"
-        },
-        {
-            "respuesta": "amorosamente",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas260.jpg')"
-        },
-        {
-            "respuesta": "camara",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas261.jpg')"
-        },
-        {
-            "respuesta": "barril",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas262.jpg')"
-        },
-        {
-            "respuesta": "desconcierto",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas263.jpg')"
-        },
-        {
-            "respuesta": "diezmar",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas264.jpg')"
-        },
-        {
-            "respuesta": "cantina",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas265.jpg')"
-        },
-        {
-            "respuesta": "salubre",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas266.jpg')"
-        },
-        {
-            "respuesta": "rebota",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas267.jpg')"
-        },
-        {
-            "respuesta": "receta",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas268.jpg')"
-        },
-        {
-            "respuesta": "falacia",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas269.jpg')"
-        },
-        {
-            "respuesta": "catarata",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas270.jpg')"
-        },
-        {
-            "respuesta": "la falda",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas271.jpg')"
-        },
-        {
-            "respuesta": "salta",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas272.jpg')"
-        },
-        {
-            "respuesta": "damasco",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas273.jpg')"
-        },
-        {
-            "respuesta": "bolivia",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas274.jpg')"
-        },
-        {
-            "respuesta": "sahara",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas275.jpg')"
-        },
-        {
-            "respuesta": "pino",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas276.jpg')"
-        },
-        {
-            "respuesta": "calculo",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas277.jpg')"
-        },
-        {
-            "respuesta": "picante",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas278.jpg')"
-        },
-        {
-            "respuesta": "armonicamente",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas279.jpg')"
-        },
-        {
-            "respuesta": "polinesia|francesa",
-            "solucion": "",
-            "nivel": "",
-            "pathImg": "require('../../assets/img/acertijos/adivinanzas280.jpg')"
-        }
-    ]
+  },{
+    "respuesta": "lunatico",
+    "solucion" : "https://www.youtube.com/watch?v=vvnVXZMaWyI",
+    "nivel":"1"
+  },{
+    "respuesta": "estomago",
+    "solucion" : "https://www.youtube.com/watch?v=oQWvQAi7Xu0",
+    "nivel":"2"
+  },{
+    "respuesta": "ingenio",
+    "solucion": "https://www.youtube.com/watch?v=JizsMU7B_OM",
+    "nivel":"3"
+  },{
+    "respuesta": "pinocho",
+    "solucion":"https://www.youtube.com/watch?v=A-JzUW1zOoA",
+    "nivel":"4"
+  },{
+    "respuesta": "quincena",
+    "solucion":"https://www.youtube.com/watch?v=SNEvM-27UP8",
+    "nivel":"5"
+  },{
+    "respuesta": "pantalon",
+    "solucion":"https://www.youtube.com/watch?v=eJ5XPaBHkO0",
+    "nivel":"6"
+  },{
+    "respuesta": "enfadado",
+    "solucion":"https://www.youtube.com/watch?v=zIXf7bknqLU",
+    "nivel":"7"
+  },{
+    "respuesta": "bizcochuelo",
+    "solucion":"https://www.youtube.com/watch?v=I7FYYJYqZCg",
+    "nivel":"8"
+  },{
+    "respuesta": "entretenido",
+    "solucion":"https://www.youtube.com/watch?v=mTuP1JPu0ZA",
+    "nivel":"9"
+  },{
+    "respuesta": "pantano",
+    "solucion":"https://www.youtube.com/watch?v=AG4iTXDF5n0",
+    "nivel":"10"
+  },{
+    "respuesta": "sombrilla",
+    "solucion":"https://www.youtube.com/watch?v=632BnneIx_E",
+    "nivel":"11"
+  },{
+    "respuesta": "sorpresa",
+    "solucion":"https://www.youtube.com/watch?v=MpW7cZu2BpA",
+    "nivel":"12"
+  },{
+    "respuesta": "pepino",
+    "solucion":"https://youtu.be/b72Jspj-gaI",
+    "nivel":"13"
+  },{
+    "respuesta": "el gordo|y el flaco",
+    "solucion":"https://youtu.be/o_FlIF_ugZY",
+    "nivel":"14"
+  },{
+    "respuesta": "conocimiento",
+    "solucion":"https://youtu.be/IkKOhJRVuVI",
+    "nivel":"15"
+  },{
+    "respuesta": "revelar",
+    "solucion":"https://youtu.be/Yo3qyLk8t8k",
+    "nivel":"16"
+  },{
+    "respuesta": "me chupa|un huevo",
+    "solucion":"https://youtu.be/Zvcb6Wr5e-k",
+    "nivel":"17"
+  },{
+    "respuesta": "termometro",
+    "solucion":"https://youtu.be/C5F2dQ_ARFI",
+    "nivel":"18"
+  },{
+    "respuesta": "leer entre|lineas",
+    "solucion":"https://youtu.be/9syozBlt4LY",
+    "nivel":"19"
+  },{
+    "respuesta": "escama",
+    "solucion":"https://youtu.be/TDsy23r3olk",
+    "nivel":"20"
+  },{
+    "respuesta": "entrenadora",
+    "solucion":"https://youtu.be/5jjxkKnGIAk",
+    "nivel":"21"
+  },{
+    "respuesta": "llave|francesa",
+    "solucion":"https://youtu.be/GkQKdlQXf8E",
+    "nivel":"22"
+  },{
+    "respuesta": "fe de|erratas",
+    "solucion":"https://youtu.be/aV6YKtJWr3I",
+    "nivel":"23"
+  },{
+    "respuesta": "encubierto",
+    "solucion":"https://youtu.be/jmHXFhXxeLc",
+    "nivel":"24"
+  },{
+    "respuesta": "colaboracion",
+    "solucion":"https://youtu.be/9sRaYTvlqSU",
+    "nivel":"25"
+  },{
+    "respuesta": "confirma",
+    "solucion":"https://youtu.be/Yz3EXH4uqgc",
+    "nivel":"26"
+  },{
+    "respuesta": "pancarta",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "el canal de|la mancha",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "maniatico",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "circulo|vicioso",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "agua|oxigenada",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "la torre|de pisa",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "leche|cortada",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "emparedado",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "triangulo de|las bermudas",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "circulo|polar artico",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "guardar|bajo llave",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "todo sobre|ruedas",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "escalpelo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "limonada",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "florencia",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "aire|comprimido",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "ascensor",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "cantero",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "soldado",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "berenjena",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "vino blanco",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "estetoscopio",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "palometa",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "cucharita",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "mas vale tarde|que nunca",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "analfabeta",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "alfa romeo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "climatizado",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "comida|rapida",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "camaleon",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "fuego|cruzado",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "votar en|blanco",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "caleidoscopio",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "polenta",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "empanada",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "resfrio",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "picara",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "emperador",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "apila",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "edad media",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "canoso",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "lenteja",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "bolchevique",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "paraguas",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "carajo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "cantantes",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "impresa",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "paciente",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "negrita",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "caracol",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "coliflor",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "mejor reir|que llorar",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "dependencia",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "porcelana",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sobrevolar",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "verde",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "viento en|popa",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sobrevivir",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "microscopico",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "corazonada",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "epico",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "tesoro",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sintaxis",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sin ton|ni son",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "empezar",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "rueda de|prensa",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "jueves|santo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "plano|inclinado",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "desencuentro",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "mal educado",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "pariente",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "pentagrama",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "ni fu ni fa",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "pilates",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "envido",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "real|envido",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "falta|envido",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "dios|mediante",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sincope",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "singapur",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "docena",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "mate|cocido",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "endosa",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "postres|helados",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "puente",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "aruba",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "casino",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "todo bajo|control",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "novela",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "venado",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "barcelona",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "rio de|janeiro",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "los angeles",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sevilla",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "estados|unidos",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "montevideo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "australia",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "paris",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "malaga",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "durazno",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "venezuela",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "curitiba",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "mykonos",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "monterrey",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "cartagena",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "asuncion",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "rosario",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "colombia",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "noruega",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "caracas",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "san diego",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "palma de|mallorca",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "venado|tuerto",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "capilla|del monte",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "isla|margarita",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "san|fernando",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "arabia",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "damasco",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "tierra|del fuego",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "mar del|plata",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "olavarria",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sierra de|la ventana",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "caleta|olivia",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "lisboa",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "barbados",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "canada",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "calamar",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "pandemonio",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "papagayo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "mayordomo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "calvario",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "merienda",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "monarca",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "nomina",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "mariguana",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "pajaro",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "repollo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "remora",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "recien|casados",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "reglamenta",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "testosterona",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "pirata",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "remar",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "portero",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sanamente",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "remodela",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "resaltar",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "arcabuz",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "petalo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "postiza",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "piston",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "premeditar",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "monoculo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "resorte",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "platano",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sotana",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "superfluo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "tartamudo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "silaba",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "recorre",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "tramposo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "terremoto",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "torpedo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "taladra",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "salpicadura",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "aguacate",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "alarma",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "arroba",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "velada",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "solista",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "viatico",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "marron",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "velocimetro",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "tributo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "barranco",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "boliviano",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "batidora",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "reciente",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "boa vista",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "cachorro",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "santa rosa",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "recinto",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "ampliamente",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "margarita",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "bastonazo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "borracha",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "barbuda",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "boludo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "camarada",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "artesanalmente",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "barbara",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "alaska",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "marsella",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "osaka",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "diametro",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "acalorada",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sotano",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "batahola",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "malasia",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "socorre",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "anatomicamente",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "colmar",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "la paz",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "ciudad del|cabo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "cucuta",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "panama",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "potente",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "margen",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "pantalla",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "diacono",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "calibre",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "bombacha",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "tormenta",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "soltero",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "pupilas",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "helsinki",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "marchita",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "milagroso",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "varsovia",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "parlamento",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "calcuta",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "camaron",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "asfalto",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "cuba",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "cancun",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sierra leona",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "osamenta",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "resguardar",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "piojo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "relata",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "campera",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "soledad",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "vibracion",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "amorosamente",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "camara",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "barril",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "desconcierto",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "diezmar",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "cantina",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "salubre",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "rebota",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "receta",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "falacia",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "catarata",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "la falda",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "salta",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "damasco",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "bolivia",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "sahara",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "pino",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "calculo",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "picante",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "armonicamente",
+    "solucion":"",
+    "nivel":""
+  },{
+    "respuesta": "polinesia|francesa",
+    "solucion":"",
+    "nivel":""
+  }
+]
 }
