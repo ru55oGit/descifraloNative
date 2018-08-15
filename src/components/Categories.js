@@ -17,6 +17,8 @@ import { famosos } from '../imageComponent/famosos.js';
 import { emojis } from '../imageComponent/emojis.js';
 import { escudos } from '../imageComponent/escudos.js';
 import { sombras } from '../imageComponent/sombras.js';
+import { aleatorio } from '../imageComponent/aleatorio.js';
+
 
 var { width } = Dimensions.get('window');
 var half_width = width/2;
@@ -24,7 +26,13 @@ var half_width = width/2;
 class Categories extends Component {
     state = {
         isReady: false,
-        rand: 130
+        levelAcertijos: 1,
+        levelLogos: 1,
+        levelPeliculas: 1,
+        levelFamosos: 1,
+        levelEmojis: 1,
+        levelEscudos: 1,
+        levelSombras: 1
     }
     
     async componentWillMount() {
@@ -53,7 +61,7 @@ class Categories extends Component {
                     <View style={styles.rowContainer}>
                         <Image
                             style={styles.img}
-                            source={require('../../assets/img/aleatorio1.jpg')} />
+                            source={aleatorio(Math.floor(Math.random() * (10 - 1)) + 1)} />
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_aleatorio.jpg')} />
@@ -64,12 +72,12 @@ class Categories extends Component {
                             source={require('../../assets/img/cat_acertijos.jpg')} />
                         <Image 
                             style={styles.img}
-                            source={adivinanzas(this.state.rand)} />
+                            source={adivinanzas(this.state.levelAcertijos)} />
                     </View>
                     <View style={styles.rowContainer}>
                         <Image 
                             style={styles.img}
-                            source={logos(this.state.rand)} />
+                            source={logos(this.state.levelLogos)} />
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_logos.jpg')} />
@@ -80,12 +88,12 @@ class Categories extends Component {
                             source={require('../../assets/img/cat_peliculas.jpg')} />
                         <Image 
                             style={styles.img}
-                            source={peliculas(this.state.rand)} />
+                            source={peliculas(this.state.levelPeliculas)} />
                     </View>
                     <View style={styles.rowContainer}>
                         <Image 
                             style={styles.img}
-                            source={famosos(this.state.rand)} />
+                            source={famosos(this.state.levelFamosos)} />
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_comosellama.jpg')} />
@@ -96,12 +104,12 @@ class Categories extends Component {
                             source={require('../../assets/img/cat_emojis.jpg')} />
                         <Image 
                             style={styles.img}
-                            source={emojis(this.state.rand)} />
+                            source={emojis(this.state.levelEmojis)} />
                     </View>
                     <View style={styles.rowContainer}>
                         <Image 
                             style={styles.img}
-                            source={escudos(this.state.rand)} />
+                            source={escudos(this.state.levelEscudos)} />
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_logosdeportes.jpg')} />
@@ -112,7 +120,7 @@ class Categories extends Component {
                             source={require('../../assets/img/cat_shadows.jpg')} />
                         <Image 
                             style={styles.img}
-                            source={sombras(this.state.rand)} />
+                            source={sombras(this.state.levelSombras)} />
                     </View>
                 </ScrollView>
                 <View style={styles.footerContainer}>
