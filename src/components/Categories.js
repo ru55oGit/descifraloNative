@@ -5,12 +5,13 @@ import {
     ScrollView,
     Image,
     Dimensions,
-    Switch
+    Switch,
+    TouchableHighlight
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { AppLoading, Font } from 'expo';
 
-import { adivinanzas } from '../imageComponent/adivinanzas.js';
+import {adivinanzas} from '../imageComponent/adivinanzas.js';
 import { logos } from '../imageComponent/logos.js';
 import { peliculas } from '../imageComponent/peliculas.js';
 import { famosos } from '../imageComponent/famosos.js';
@@ -70,14 +71,20 @@ class Categories extends Component {
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_acertijos.jpg')} />
-                        <Image 
+                        <TouchableHighlight
+                            onPress={() => Actions.levels({level: this.state.levelAcertijos, category: 'acertijos'}) }>
+                            <Image 
                             style={styles.img}
                             source={adivinanzas(this.state.levelAcertijos)} />
+                        </TouchableHighlight>
                     </View>
                     <View style={styles.rowContainer}>
-                        <Image 
-                            style={styles.img}
-                            source={logos(this.state.levelLogos)} />
+                        <TouchableHighlight
+                            onPress={() => Actions.levels({level: this.state.levelLogos, category: 'logos'}) }>
+                            <Image 
+                                style={styles.img}
+                                source={logos(this.state.levelLogos)} />
+                        </TouchableHighlight>
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_logos.jpg')} />

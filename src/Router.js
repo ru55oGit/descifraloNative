@@ -12,7 +12,7 @@ const RouterComponent = (props) => {
                 <Scene key="splash" component={Splash} hideNavBar={true} />
                 <Scene key="game_bucket" >
                     <Scene key="categories" component={Categories} hideNavBar={true} />
-                    <Scene key="levels" component={Levels} hideNavBar={true} handleClick={props.level}  />
+                    <Scene key="levels" component={Levels} hideNavBar={true} />
                     <Scene key="guess" component={GuessImage} hideNavBar={true} />
                 </Scene>
             </Scene>
