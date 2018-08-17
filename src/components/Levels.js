@@ -92,11 +92,15 @@ class Levels extends Component {
 						numColumns={4}
                         keyExtractor={item => item.respuesta}
 						renderItem={({item, index}) =>
-							<ImageBackground key={index} 
-									style={styles.circle}
-									source={imageCategory(index+1)}>
-                                <Text style={styles.textCircle} onPress={() => Actions.guess({level: index+1, respuesta: item})}>{index+1}</Text>
-                            </ImageBackground>
+							<TouchableHighlight
+								style={styles.levelContainer}
+								onPress={() => Actions.guess({image_to_guess:{level: index+1, answer: item}})}>
+								<ImageBackground key={index} 
+										style={styles.level}
+										source={imageCategory(index+1)}>
+									<Text style={styles.textLevel}>{index+1}</Text>
+								</ImageBackground>
+							</TouchableHighlight>
                         }
                     />
                 </ScrollView>
@@ -138,29 +142,33 @@ const styles = {
         justifyContent: 'center',
         alignItems: 'center',
         alignSelf: 'stretch'
-    },
-    circle: {
+	},
+	levelContainer: {
 		width: half_width,
 		height: half_width,
 		borderWidth: 1,
-    	borderColor: '#000'
+		borderColor: '#000',
     },
-    textCircle: {
+    level: {
+		width: half_width,
+		height: half_width,
+    },
+    textLevel: {
     	fontFamily: 'lobster',
     	fontSize: 16,
     	color: '#000',
         textAlign: 'left'
-	},
-	arrowBack: {
-		width: 50,
-		height: 50
 	},
 	arrowBackContainer: {
 		position: 'absolute',
 		left: 5,
 		width: 50,
 		height: 50
-	}
+	},
+	arrowBack: {
+		width: 50,
+		height: 50
+	},
 };
 
 export default Levels;
