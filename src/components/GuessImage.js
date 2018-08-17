@@ -9,13 +9,37 @@ import { Actions } from 'react-native-router-flux';
 
 import CONST from '../../global-config'
 
+import { adivinanzas } from '../imageComponent/adivinanzas.js';
+import { logos } from '../imageComponent/logos.js';
+import { peliculas } from '../imageComponent/peliculas.js';
+import { famosos } from '../imageComponent/famosos.js';
+import { emojis } from '../imageComponent/emojis.js';
+import { escudos } from '../imageComponent/escudos.js';
+import { sombras } from '../imageComponent/sombras.js';
+import { aleatorio } from '../imageComponent/aleatorio.js';
 
+var imageCategory;
 
 class GuessImage extends Component {
 	constructor(props){
 	  super(props);
 	}
 	render(){
+		if (this.props.image_to_guess.category == CONST.CATEGORY.ADIVINANZAS) {
+			imageCategory = adivinanzas;
+		} else if (this.props.image_to_guess.category == CONST.CATEGORY.LOGOS) {
+			imageCategory = logos;
+		} else if (this.props.image_to_guess.category == CONST.CATEGORY.PELICULAS) {
+			imageCategory = peliculas;
+		} else if (this.props.image_to_guess.category == CONST.CATEGORY.FAMOSOS) {
+			imageCategory = famosos;
+		} else if (this.props.image_to_guess.category == CONST.CATEGORY.EMOJIS) {
+			imageCategory = emojis;
+		} else if (this.props.image_to_guess.category == CONST.CATEGORY.ESCUDOS) {
+			imageCategory = escudos;
+		} else if (this.props.image_to_guess.category == CONST.CATEGORY.SOMBRAS) {
+			imageCategory = sombras;
+		}
 		return(
 			<View style={styles.containerSectionStyle}>
 				<View style={styles.headerContainer}>
@@ -26,7 +50,9 @@ class GuessImage extends Component {
 					<Image style={styles.clock} source={require('../../assets/img/chrono.png')} />
 				</View>
 				<View style={styles.imageContainer}>
-					<Text>Nivel  {this.props.image_to_guess.level}</Text>
+					<Image
+						style={styles.imageToGuess}
+						source={imageCategory(this.props.image_to_guess.level)} />
 					<Text>{this.props.image_to_guess.answer.respuesta}</Text>
 				</View>
 			</View>
@@ -64,8 +90,8 @@ const styles = {
 		position: 'relative',
 	},
 	clock: {
-		width: 60,
-		height: 60,
+		width: 65,
+		height: 65,
 		position: 'absolute',
 		right: 8,
 		top: 8,
@@ -73,6 +99,12 @@ const styles = {
 	},
 	imageContainer: {
 		flex: 9,
+	},
+	imageToGuess: {
+		width: 230,
+		height: 230,
+		borderWidth: 7,
+		borderColor: '#000',
 	}
 };
 

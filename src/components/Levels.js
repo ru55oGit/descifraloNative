@@ -94,7 +94,7 @@ class Levels extends Component {
 						renderItem={({item, index}) =>
 							<TouchableHighlight
 								style={styles.levelContainer}
-								onPress={() => Actions.guess({image_to_guess:{level: index+1, answer: item}})}>
+								onPress={() => Actions.guess({image_to_guess:{level: index+1, answer: item, category: this.props.category}})}>
 								<ImageBackground key={index} 
 										style={styles.level}
 										source={imageCategory(index+1)}>
