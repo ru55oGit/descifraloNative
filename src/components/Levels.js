@@ -5,28 +5,34 @@ import { View,
          Switch, 
          ImageBackground,
          FlatList,
-         Dimensions
+		 Dimensions,
+		 Image,
+		 TouchableHighlight
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { AppLoading, Font } from 'expo';
 
-import Data from '../../assets/data.json';
+import CONST from '../../global-config'
 
 import DataAcertijos from '../../assets/adivinanzas.json';
-import DataMarcas from '../../assets/marcas.json';
-import DataQuestions from '../../assets/questions.json';
+import DataBanderas from '../../assets/banderas.json';
+import DataFamosos from '../../assets/famosos.json';
+import DataEmojis from '../../assets/emojis.json';
+import DataEscudos from '../../assets/escudos.json';
 import DataLogos from '../../assets/marcas.json';
+import DataPeliculas from '../../assets/peliculas.json';
+import DataSombras from '../../assets/sombras.json';
 
 import { adivinanzas } from '../imageComponent/adivinanzas.js';
 import { logos } from '../imageComponent/logos.js';
-import { imagesPeliculas } from '../imageComponent/peliculas.js';
-import { imagesFamosos } from '../imageComponent/famosos.js';
-import { imagesEmojis } from '../imageComponent/emojis.js';
-import { imagesEscudos } from '../imageComponent/escudos.js';
-import { imagesSombras } from '../imageComponent/sombras.js';
-import { imagesAleatorio } from '../imageComponent/aleatorio.js';
+import { peliculas } from '../imageComponent/peliculas.js';
+import { famosos } from '../imageComponent/famosos.js';
+import { emojis } from '../imageComponent/emojis.js';
+import { escudos } from '../imageComponent/escudos.js';
+import { sombras } from '../imageComponent/sombras.js';
+import { aleatorio } from '../imageComponent/aleatorio.js';
 
-let imageCategory, DataCategory;
+var imageCategory, DataCategory;
 var { width } = Dimensions.get('window');
 var half_width = width/4;
 
@@ -45,21 +51,28 @@ class Levels extends Component {
 		this.setState({isReady: true});
 	}
 	
-	toggleSwitch1 = (value) => {
-      this.setState({ switchState: value })
-      console.log(value);
-    }
-
 	render() {
-		if (this.props.category == 'acertijos') {
+		if (this.props.category == CONST.CATEGORY.ADIVINANZAS) {
 			imageCategory = adivinanzas;
 			DataCategory = DataAcertijos;
-		} else if (this.props.category == 'logos') {
+		} else if (this.props.category == CONST.CATEGORY.LOGOS) {
 			imageCategory = logos;
 			DataCategory = DataLogos;
-		} else if (this.props.category == 'logos') {
-			imageCategory = logos;
-			DataCategory = DataLogos;
+		} else if (this.props.category == CONST.CATEGORY.PELICULAS) {
+			imageCategory = peliculas;
+			DataCategory = DataPeliculas;
+		} else if (this.props.category == CONST.CATEGORY.FAMOSOS) {
+			imageCategory = famosos;
+			DataCategory = DataFamosos;
+		} else if (this.props.category == CONST.CATEGORY.EMOJIS) {
+			imageCategory = emojis;
+			DataCategory = DataEmojis;
+		} else if (this.props.category == CONST.CATEGORY.ESCUDOS) {
+			imageCategory = escudos;
+			DataCategory = DataEscudos;
+		} else if (this.props.category == CONST.CATEGORY.SOMBRAS) {
+			imageCategory = sombras;
+			DataCategory = DataSombras;
 		}
 
 		if (!this.state.isReady) {
@@ -68,6 +81,9 @@ class Levels extends Component {
 		return(
 			<View style={styles.containerSectionStyle}>
 				<View style={styles.headerContainer}>
+					<TouchableHighlight style={styles.arrowBackContainer} onPress={() => Actions.pop()}>
+						<Image style={styles.arrowBack} source={require('../../assets/img/arrowback.png')} />
+					</TouchableHighlight>
 					<Text style={styles.headerTitle}>Elige el nivel</Text>
 				</View>
                 <ScrollView>
@@ -84,17 +100,6 @@ class Levels extends Component {
                         }
                     />
                 </ScrollView>
-				<View style={styles.footerContainer}>
-					<Text style={styles.footerText}>Español</Text>
-					<Switch
-                      thumbTintColor="#ffffff"
-                      tintColor="#cccccc"
-                      onTintColor="#cccccc"
-					  onValueChange={this.toggleSwitch1.bind(this)} 
-					  value={ this.state.switchState } 
-					/>
-		            <Text style={styles.footerText}>English</Text>
-				</View>
 			</View>
 		);
 	}
@@ -109,7 +114,7 @@ const styles = {
         backgroundColor: '#fff'
     },
     headerContainer: {
-    	backgroundColor: '#cb4e48',
+    	backgroundColor: CONST.COLOR.BACKGROUND_SPANISH,
     	alignSelf: 'stretch',
     	justifyContent: 'center',
     	alignItems: 'center',
@@ -137,7 +142,7 @@ const styles = {
     circle: {
 		width: half_width,
 		height: half_width,
-		borderWidth: 0.7,
+		borderWidth: 1,
     	borderColor: '#000'
     },
     textCircle: {
@@ -145,20 +150,17 @@ const styles = {
     	fontSize: 16,
     	color: '#000',
         textAlign: 'left'
-    },
-    footerContainer: {
-		backgroundColor: '#cb4e48',
-    	alignSelf: 'stretch',
-    	flexDirection: 'row',
-    	justifyContent: 'space-between',
-    	alignItems: 'center',
-    	height: 60,
-    	padding: 10
-    },
-    footerText: {
-    	color: 'white',
-    	fontSize: 20
-    }
+	},
+	arrowBack: {
+		width: 50,
+		height: 50
+	},
+	arrowBackContainer: {
+		position: 'absolute',
+		left: 5,
+		width: 50,
+		height: 50
+	}
 };
 
 export default Levels;

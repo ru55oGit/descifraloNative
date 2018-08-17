@@ -11,7 +11,9 @@ import {
 import { Actions } from 'react-native-router-flux';
 import { AppLoading, Font } from 'expo';
 
-import {adivinanzas} from '../imageComponent/adivinanzas.js';
+import CONST from '../../global-config';
+
+import { adivinanzas } from '../imageComponent/adivinanzas.js';
 import { logos } from '../imageComponent/logos.js';
 import { peliculas } from '../imageComponent/peliculas.js';
 import { famosos } from '../imageComponent/famosos.js';
@@ -72,7 +74,7 @@ class Categories extends Component {
                             style={styles.img}
                             source={require('../../assets/img/cat_acertijos.jpg')} />
                         <TouchableHighlight
-                            onPress={() => Actions.levels({level: this.state.levelAcertijos, category: 'acertijos'}) }>
+                            onPress={() => Actions.levels({level: this.state.levelAcertijos, category: CONST.CATEGORY.ADIVINANZAS}) }>
                             <Image 
                             style={styles.img}
                             source={adivinanzas(this.state.levelAcertijos)} />
@@ -80,7 +82,7 @@ class Categories extends Component {
                     </View>
                     <View style={styles.rowContainer}>
                         <TouchableHighlight
-                            onPress={() => Actions.levels({level: this.state.levelLogos, category: 'logos'}) }>
+                            onPress={() => Actions.levels({level: this.state.levelLogos, category: CONST.CATEGORY.LOGOS}) }>
                             <Image 
                                 style={styles.img}
                                 source={logos(this.state.levelLogos)} />
@@ -93,14 +95,20 @@ class Categories extends Component {
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_peliculas.jpg')} />
-                        <Image 
-                            style={styles.img}
-                            source={peliculas(this.state.levelPeliculas)} />
+                        <TouchableHighlight
+                            onPress={() => Actions.levels({level: this.state.levelPeliculas, category: CONST.CATEGORY.PELICULAS}) }>
+                            <Image 
+                                style={styles.img}
+                                source={peliculas(this.state.levelPeliculas)} />
+                        </TouchableHighlight>
                     </View>
                     <View style={styles.rowContainer}>
-                        <Image 
-                            style={styles.img}
-                            source={famosos(this.state.levelFamosos)} />
+                        <TouchableHighlight
+                            onPress={() => Actions.levels({level: this.state.levelFamosos, category: CONST.CATEGORY.FAMOSOS}) }>
+                            <Image 
+                                style={styles.img}
+                                source={famosos(this.state.levelFamosos)} />
+                        </TouchableHighlight>
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_comosellama.jpg')} />
@@ -109,14 +117,20 @@ class Categories extends Component {
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_emojis.jpg')} />
-                        <Image 
+                        <TouchableHighlight
+                            onPress={() => Actions.levels({level: this.state.levelEmojis, category: CONST.CATEGORY.EMOJIS}) }>
+                            <Image 
                             style={styles.img}
                             source={emojis(this.state.levelEmojis)} />
+                        </TouchableHighlight>
                     </View>
                     <View style={styles.rowContainer}>
-                        <Image 
-                            style={styles.img}
-                            source={escudos(this.state.levelEscudos)} />
+                        <TouchableHighlight
+                            onPress={() => Actions.levels({level: this.state.levelEscudos, category: CONST.CATEGORY.ESCUDOS}) }>
+                            <Image 
+                                style={styles.img}
+                                source={escudos(this.state.levelEscudos)} />
+                        </TouchableHighlight>
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_logosdeportes.jpg')} />
@@ -125,9 +139,12 @@ class Categories extends Component {
                         <Image
                             style={styles.img}
                             source={require('../../assets/img/cat_shadows.jpg')} />
-                        <Image 
-                            style={styles.img}
-                            source={sombras(this.state.levelSombras)} />
+                        <TouchableHighlight
+                            onPress={() => Actions.levels({level: this.state.levelSombras, category: CONST.CATEGORY.SOMBRAS}) }>
+                            <Image 
+                                style={styles.img}
+                                source={sombras(this.state.levelSombras)} />
+                        </TouchableHighlight>
                     </View>
                 </ScrollView>
                 <View style={styles.footerContainer}>
@@ -154,7 +171,7 @@ const styles = {
         backgroundColor: '#fff'
     },
     headerContainer: {
-        backgroundColor: '#cb4e48',
+        backgroundColor: CONST.COLOR.BACKGROUND_ENGLISH,
         alignSelf: 'stretch',
         justifyContent: 'center',
         alignItems: 'center',
@@ -178,7 +195,7 @@ const styles = {
         height: half_width,
     },
     footerContainer: {
-        backgroundColor: '#cb4e48',
+        backgroundColor: CONST.COLOR.BACKGROUND_ENGLISH,
         alignSelf: 'stretch',
         flexDirection: 'row',
         justifyContent: 'space-between',

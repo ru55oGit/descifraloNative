@@ -1,506 +1,503 @@
 {
-  "listado": [
-    {
-    },
-    {
-      "respuesta": "River|Plate",
-      "solucion":"https://youtu.be/vvnVXZMaWyI?t=339",
-      "nivel":"1"
-    },
-    {
-      "respuesta": "Napoli",
-      "solucion":"https://youtu.be/oQWvQAi7Xu0?t=339",
-      "nivel":"2"
-    },
-    {
-      "respuesta": "Barcelona",
-      "solucion":"https://youtu.be/JizsMU7B_OM?t=339",
-      "nivel":"3"
-    },
-    {
-      "respuesta": "Valencia",
-      "solucion":"https://youtu.be/A-JzUW1zOoA?t=339",
-      "nivel":"4"
-    },
-    {
-      "respuesta": "Bayer|Munich",
-      "solucion":"https://youtu.be/SNEvM-27UP8?t=339",
-      "nivel":"5"
-    },
-    {
-      "respuesta": "Roma",
-      "solucion":"https://youtu.be/eJ5XPaBHkO0?t=339",
-      "nivel":"6"
-    },
-    {
-      "respuesta": "Cruz|Azul",
-      "solucion":"https://youtu.be/zIXf7bknqLU?t=339",
-      "nivel":"7"
-    },
-    {
-      "respuesta": "Real|Madrid",
-      "solucion":"https://youtu.be/I7FYYJYqZCg?t=339",
-      "nivel":"8"
-    },
-    {
-      "respuesta": "Racing|Club",
-      "solucion":"https://youtu.be/mTuP1JPu0ZA?t=339",
-      "nivel":"9"
-    },
-    {
-      "respuesta": "San Pablo",
-      "solucion":"https://youtu.be/AG4iTXDF5n0?t=339",
-      "nivel":"10"
-    },
-    {
-      "respuesta": "Gremio",
-      "solucion":"https://youtu.be/632BnneIx_E?t=339",
-      "nivel":"11"
-    },
-    {
-      "respuesta": "Atletico|de Madrid",
-      "solucion":"https://youtu.be/MpW7cZu2BpA?t=339",
-      "nivel":"12"
-    },
-    {
-      "respuesta": "Borussia|Dortmund",
-      "solucion":"https://youtu.be/b72Jspj-gaI?t=339",
-      "nivel":"13"
-    },
-    {
-      "respuesta": "Milan",
-      "solucion":"https://youtu.be/o_FlIF_ugZY?t=339",
-      "nivel":"14"
-    },
-    {
-      "respuesta": "Manchester|City",
-      "solucion":"https://youtu.be/IkKOhJRVuVI?t=339",
-      "nivel":"15"
-    },
-    {
-      "respuesta": "Colo Colo",
-      "solucion":"https://youtu.be/Yo3qyLk8t8k?t=339",
-      "nivel":"16"
-    },
-    {
-      "respuesta": "Inter de|Porto Alegre",
-      "solucion":"https://youtu.be/Zvcb6Wr5e-k?t=339",
-      "nivel":"17"
-    },
-    {
-      "respuesta": "Once|Caldas",
-      "solucion":"https://youtu.be/C5F2dQ_ARFI?t=339",
-      "nivel":"18"
-    },
-    {
-      "respuesta": "Manchester|United",
-      "solucion":"https://youtu.be/9syozBlt4LY?t=339",
-      "nivel":"19"
-    },
-    {
-      "respuesta": "Cruzeiro",
-      "solucion":"https://youtu.be/TDsy23r3olk?t=339",
-      "nivel":"20"
-    },
-    {
-      "respuesta": "Atletico|Nacional",
-      "solucion":"https://youtu.be/5jjxkKnGIAk?t=339",
-      "nivel":"21"
-    },
-    {
-      "respuesta": "Lazio",
-      "solucion":"https://youtu.be/GkQKdlQXf8E?t=339",
-      "nivel":"22"
-    },
-    {
-      "respuesta": "Chelsea",
-      "solucion":"https://youtu.be/aV6YKtJWr3I?t=339",
-      "nivel":"23"
-    },
-    {
-      "respuesta": "Wolfsburgo",
-      "solucion":"https://youtu.be/jmHXFhXxeLc?t=339",
-      "nivel":"24"
-    },
-    {
-      "respuesta": "San Lorenzo",
-      "solucion":"https://youtu.be/9sRaYTvlqSU?t=339",
-      "nivel":"25"
-    },
-    {
-      "respuesta": "Flamengo",
-      "solucion":"https://youtu.be/Yz3EXH4uqgc?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Hamburgo",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Sevilla",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Juventus",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Arsenal",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Bayer|Leverkusen",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Lanus",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Osasuna",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "America",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Inter de|Milan",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Malaga",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Liverpool",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Schalke 04",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Torino",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Everton",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Universidad|de chile",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Estudiantes|de la plata",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Sampdoria",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Velez|Sarsfield",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Betis",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Siena",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Necaxa",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "West|Bromwich",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Perugia",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Villareal",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Herta|Berlin",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Rosario|Central",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Santos",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Millonarios",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Universidad|Catolica",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Fiorentina",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Atlas",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Tottenham|Hotspur",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Palmeiras",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Werder|Bremen",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Bologna",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Newcastle",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Levante",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Palermo",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Tigre",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Junior de|Barranquilla",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "corinthians",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Fluminense",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Newells|Old Boys",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Deportivo|Cali",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "West|Ham",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Monterrey",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "chievo|verona",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Aston|Villa",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Empoli",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Vasco da|Gama",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "America|de Cali",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Colon",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Gimnasia|de la plata",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Parma",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Banfield",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Rayo|Vallecano",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "olympique|de marsella",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Genoa",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Independiente|santa fe",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Real|Sociedad",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Fulham",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Independiente|de avellaneda",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Stuttgart",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Espanyol de|Barcelona",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Hellas|Verona",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Union",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Paris|Saint Germain",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Southampton",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "leicester",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Boca Juniors",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Hannover 96",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Celta de Vigo",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Watford",
-      "solucion":"?t=339",
-      "nivel":""
-    },
-    {
-      "respuesta": "Cagliari",
-      "solucion":"?t=339",
-      "nivel":""
-    }
-  ]
+    "listado": [{
+            "respuesta": "River|Plate",
+            "solucion": "https://youtu.be/vvnVXZMaWyI?t=339",
+            "nivel": "1"
+        },
+        {
+            "respuesta": "Napoli",
+            "solucion": "https://youtu.be/oQWvQAi7Xu0?t=339",
+            "nivel": "2"
+        },
+        {
+            "respuesta": "Barcelona",
+            "solucion": "https://youtu.be/JizsMU7B_OM?t=339",
+            "nivel": "3"
+        },
+        {
+            "respuesta": "Valencia",
+            "solucion": "https://youtu.be/A-JzUW1zOoA?t=339",
+            "nivel": "4"
+        },
+        {
+            "respuesta": "Bayer|Munich",
+            "solucion": "https://youtu.be/SNEvM-27UP8?t=339",
+            "nivel": "5"
+        },
+        {
+            "respuesta": "Roma",
+            "solucion": "https://youtu.be/eJ5XPaBHkO0?t=339",
+            "nivel": "6"
+        },
+        {
+            "respuesta": "Cruz|Azul",
+            "solucion": "https://youtu.be/zIXf7bknqLU?t=339",
+            "nivel": "7"
+        },
+        {
+            "respuesta": "Real|Madrid",
+            "solucion": "https://youtu.be/I7FYYJYqZCg?t=339",
+            "nivel": "8"
+        },
+        {
+            "respuesta": "Racing|Club",
+            "solucion": "https://youtu.be/mTuP1JPu0ZA?t=339",
+            "nivel": "9"
+        },
+        {
+            "respuesta": "San Pablo",
+            "solucion": "https://youtu.be/AG4iTXDF5n0?t=339",
+            "nivel": "10"
+        },
+        {
+            "respuesta": "Gremio",
+            "solucion": "https://youtu.be/632BnneIx_E?t=339",
+            "nivel": "11"
+        },
+        {
+            "respuesta": "Atletico|de Madrid",
+            "solucion": "https://youtu.be/MpW7cZu2BpA?t=339",
+            "nivel": "12"
+        },
+        {
+            "respuesta": "Borussia|Dortmund",
+            "solucion": "https://youtu.be/b72Jspj-gaI?t=339",
+            "nivel": "13"
+        },
+        {
+            "respuesta": "Milan",
+            "solucion": "https://youtu.be/o_FlIF_ugZY?t=339",
+            "nivel": "14"
+        },
+        {
+            "respuesta": "Manchester|City",
+            "solucion": "https://youtu.be/IkKOhJRVuVI?t=339",
+            "nivel": "15"
+        },
+        {
+            "respuesta": "Colo Colo",
+            "solucion": "https://youtu.be/Yo3qyLk8t8k?t=339",
+            "nivel": "16"
+        },
+        {
+            "respuesta": "Inter de|Porto Alegre",
+            "solucion": "https://youtu.be/Zvcb6Wr5e-k?t=339",
+            "nivel": "17"
+        },
+        {
+            "respuesta": "Once|Caldas",
+            "solucion": "https://youtu.be/C5F2dQ_ARFI?t=339",
+            "nivel": "18"
+        },
+        {
+            "respuesta": "Manchester|United",
+            "solucion": "https://youtu.be/9syozBlt4LY?t=339",
+            "nivel": "19"
+        },
+        {
+            "respuesta": "Cruzeiro",
+            "solucion": "https://youtu.be/TDsy23r3olk?t=339",
+            "nivel": "20"
+        },
+        {
+            "respuesta": "Atletico|Nacional",
+            "solucion": "https://youtu.be/5jjxkKnGIAk?t=339",
+            "nivel": "21"
+        },
+        {
+            "respuesta": "Lazio",
+            "solucion": "https://youtu.be/GkQKdlQXf8E?t=339",
+            "nivel": "22"
+        },
+        {
+            "respuesta": "Chelsea",
+            "solucion": "https://youtu.be/aV6YKtJWr3I?t=339",
+            "nivel": "23"
+        },
+        {
+            "respuesta": "Wolfsburgo",
+            "solucion": "https://youtu.be/jmHXFhXxeLc?t=339",
+            "nivel": "24"
+        },
+        {
+            "respuesta": "San Lorenzo",
+            "solucion": "https://youtu.be/9sRaYTvlqSU?t=339",
+            "nivel": "25"
+        },
+        {
+            "respuesta": "Flamengo",
+            "solucion": "https://youtu.be/Yz3EXH4uqgc?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Hamburgo",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Sevilla",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Juventus",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Arsenal",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Bayer|Leverkusen",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Lanus",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Osasuna",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "America",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Inter de|Milan",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Malaga",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Liverpool",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Schalke 04",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Torino",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Everton",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Universidad|de chile",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Estudiantes|de la plata",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Sampdoria",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Velez|Sarsfield",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Betis",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Siena",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Necaxa",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "West|Bromwich",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Perugia",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Villareal",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Herta|Berlin",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Rosario|Central",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Santos",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Millonarios",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Universidad|Catolica",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Fiorentina",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Atlas",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Tottenham|Hotspur",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Palmeiras",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Werder|Bremen",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Bologna",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Newcastle",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Levante",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Palermo",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Tigre",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Junior de|Barranquilla",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "corinthians",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Fluminense",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Newells|Old Boys",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Deportivo|Cali",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "West|Ham",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Monterrey",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "chievo|verona",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Aston|Villa",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Empoli",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Vasco da|Gama",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "America|de Cali",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Colon",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Gimnasia|de la plata",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Parma",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Banfield",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Rayo|Vallecano",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "olympique|de marsella",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Genoa",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Independiente|santa fe",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Real|Sociedad",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Fulham",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Independiente|de avellaneda",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Stuttgart",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Espanyol de|Barcelona",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Hellas|Verona",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Union",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Paris|Saint Germain",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Southampton",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "leicester",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Boca Juniors",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Hannover 96",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Celta de Vigo",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Watford",
+            "solucion": "?t=339",
+            "nivel": ""
+        },
+        {
+            "respuesta": "Cagliari",
+            "solucion": "?t=339",
+            "nivel": ""
+        }
+    ]
 }
