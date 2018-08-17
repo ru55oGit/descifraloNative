@@ -24,6 +24,15 @@ class GuessImage extends Component {
 	constructor(props){
 	  super(props);
 	}
+	
+	wordToGues(str) {
+		console.log(str);
+		word = str.split("");
+		return word.map((key) => (
+			<Text style={{borderWidth: 2, borderColor: '#000', borderRadius: 5, width: 23, height: 23, backgroundColor: '#fff', marginRight: 1}}></Text>
+		));
+	}
+
 	render(){
 		if (this.props.image_to_guess.category == CONST.CATEGORY.ADIVINANZAS) {
 			imageCategory = adivinanzas;
@@ -40,6 +49,7 @@ class GuessImage extends Component {
 		} else if (this.props.image_to_guess.category == CONST.CATEGORY.SOMBRAS) {
 			imageCategory = sombras;
 		}
+		
 		return(
 			<View style={styles.containerSectionStyle}>
 				<View style={styles.headerContainer}>
@@ -53,8 +63,8 @@ class GuessImage extends Component {
 					<Image
 						style={styles.imageToGuess}
 						source={imageCategory(this.props.image_to_guess.level)} />
-					<Text>{this.props.image_to_guess.answer.respuesta}</Text>
 				</View>
+				<View style={{flexDirection:'row', justifyContent:'center', flex: 4,}}>{this.wordToGues(this.props.image_to_guess.answer.respuesta)}</View>
 			</View>
 		);
 	}
@@ -70,7 +80,7 @@ const styles = {
 		alignSelf: 'stretch',
 		alignItems:'center',
 		height: 60,
-		flex: 2,
+		flex: 1.5,
     },
 	closeContainer: {
 		position: 'absolute',
@@ -98,7 +108,8 @@ const styles = {
 		transform: [{ rotate: '20deg'}],
 	},
 	imageContainer: {
-		flex: 9,
+		flex: 4,
+		paddingBottom: 5,
 	},
 	imageToGuess: {
 		width: 230,
