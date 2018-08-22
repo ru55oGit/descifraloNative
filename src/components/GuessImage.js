@@ -26,14 +26,26 @@ class GuessImage extends Component {
 	}
 	
 	wordToGues(str) {
-		console.log(str);
-		word = str.split("");
-		return word.map((key) => (
-			<Text style={{borderWidth: 2, borderColor: '#000', borderRadius: 5, width: 23, height: 23, backgroundColor: '#fff', marginRight: 1}}></Text>
-		));
+		answer = str.split("|");
+		return answer.map((key, i) => {
+			word = answer[i].split(""),
+			 (<View style={{flexDirection: 'row'}}>
+				return answer.map(()=>{
+					 <Text style={{borderWidth: 2, borderColor: '#000', borderRadius: 5, width: 23, height: 23, backgroundColor: '#fff', marginRight: 1}}></Text>
+				}
+			</View>)
+		});
 	}
 
-	render(){
+	wordToGues2(str) {
+		answer = str.split("|");
+		answer.forEach((key, idx) => {
+			console.log('key: ', key, ' idx: ', idx)
+			//word = answer[i].split(""),
+		});
+	}
+
+	render() {
 		if (this.props.image_to_guess.category == CONST.CATEGORY.ADIVINANZAS) {
 			imageCategory = adivinanzas;
 		} else if (this.props.image_to_guess.category == CONST.CATEGORY.LOGOS) {
@@ -64,7 +76,7 @@ class GuessImage extends Component {
 						style={styles.imageToGuess}
 						source={imageCategory(this.props.image_to_guess.level)} />
 				</View>
-				<View style={{flexDirection:'row', justifyContent:'center', flex: 4,}}>{this.wordToGues(this.props.image_to_guess.answer.respuesta)}</View>
+				<View style={{flexDirection:'row', justifyContent:'center', flex: 4,}}>{this.wordToGues2(this.props.image_to_guess.answer.respuesta)}</View>
 			</View>
 		);
 	}
