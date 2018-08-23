@@ -11,6 +11,7 @@ import { Actions } from 'react-native-router-flux';
 import CONST from '../../global-config'
 
 var { width } = Dimensions.get('window');
+var full_width = width;
 var third_width = width / 3;
 var fourth_width = width / 4;
 
@@ -105,23 +106,23 @@ const styles = {
 		position: 'absolute',
 		left: 5,
 		top: 8,
-		width: 60,
-		height: 60
+		width: full_width * 0.15,
+        height: full_width * 0.15,
 	},
 	close: {
-        width: fourth_width / 2,
-        height: fourth_width / 2
+        width: full_width * 0.15,
+        height: full_width * 0.15,
 	},
     headerTitle: {
-        width: fourth_width * 2,
-		height: 45,
+        width: '75%',
+		height: '40%',
 		top: 15,
         position: 'relative',
         resizeMode: 'contain',
 	},
 	clock: {
-        width: fourth_width / 2,
-        height: fourth_width / 2,
+        width: full_width * 0.18,
+        height: full_width * 0.18,
 		position: 'absolute',
 		right: 8,
 		top: 8,
