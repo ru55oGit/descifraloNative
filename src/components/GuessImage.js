@@ -30,25 +30,25 @@ class GuessImage extends Component {
 	constructor(props){
 	  super(props);
 	}
-	
-	wordToGuess2(str) {
-        word = str.split("");
-        return word.map((key, idx) => {
-            <Text id={idx} style={{ borderWidth: 2, borderColor: '#000', borderRadius: 5, width: 25, height: 25, backgroundColor: '#fff', marginRight: 1 }}>{key}</Text>
-        });
+	//anda bien
+	wordToGuess(str) {
+		console.log(str);
+		word = str.split("");
+		return word.map((key) => (
+			<Text style={{borderWidth: 2, borderColor: '#000', borderRadius: 5, width: 23, height: 23, backgroundColor: '#fff', marginRight: 1}}></Text>
+		));
 	}
 
-	wordToGuess(str) {
+	wordToGuess1(str) {
+		let word,
 		answer = str.split("|");
-		answer.forEach((key, i) => {
-			console.log('key: ', key, ' id: ', i)
-            word = answer[i].split("");
-            <View style={{ flexDirection: 'row' }}>
-                return answer.forEach((key, i) => {
-                     <Text style={{ borderWidth: 2, borderColor: '#000', borderRadius: 5, width: 23, height: 23, backgroundColor: '#fff', marginRight: 1 }}></Text>
-                });
-            </View>
-		});
+		return answer.map((key, id)	=> (
+			<View style={{flexDirection:'row', justifyContent:'center', marginTop: 5, marginBottom: 5}}>
+				{answer[id].split("").map((key) => (
+					<Text style={key==" "?styles.letterWithSpaceContainer:styles.letterContainer}>{key!=" "?"__":""}</Text>
+				))}
+			</View>
+		));
 	}
 
 	render() {
@@ -67,7 +67,7 @@ class GuessImage extends Component {
 		} else if (this.props.image_to_guess.category == CONST.CATEGORY.SOMBRAS) {
 			imageCategory = sombras;
 		}
-		
+
 		return(
 			<View style={styles.containerSectionStyle}>
 				<View style={styles.headerContainer}>
@@ -82,9 +82,8 @@ class GuessImage extends Component {
 						style={styles.imageToGuess}
 						source={imageCategory(this.props.image_to_guess.level)} />
                 </View>
-                <View style={{ flexDirection: 'row', justifyContent: 'center', flex: 2, height: 30, width: third_width*2, backgroundColor: 'yellow' }}>
-                    {this.wordToGuess2(this.props.image_to_guess.answer.respuesta)}
-                </View>
+				<View style={{flexDirection:'column', justifyContent:'center',}}>{this.wordToGuess1(this.props.image_to_guess.answer.respuesta)}</View>
+
 			</View>
 		);
 	}
@@ -100,7 +99,6 @@ const styles = {
 		alignSelf: 'stretch',
 		alignItems:'center',
 		height: 60,
-		flex: 1.5,
     },
 	closeContainer: {
 		position: 'absolute',
@@ -115,7 +113,6 @@ const styles = {
 	},
     headerTitle: {
         width: '75%',
-		height: '40%',
 		top: 15,
         position: 'relative',
         resizeMode: 'contain',
@@ -129,7 +126,7 @@ const styles = {
 		transform: [{ rotate: '20deg'}],
 	},
 	imageContainer: {
-		flex: 4,
+		marginTop: 20,
 		paddingBottom: 5,
 	},
 	imageToGuess: {
@@ -137,7 +134,25 @@ const styles = {
         height: third_width*2,
 		borderWidth: 7,
         borderColor: '#000',
+	},
+	letterContainer:{
+		borderWidth: 2, 
+		borderColor: '#000', 
+		borderRadius: 6, 
+		width: 25, 
+		height: 25, 
+		textAlign: 'center',
+		backgroundColor: '#fff', 
+		paddingBottom: 0,
+		paddingTop: 4,
+		marginRight: 1
+	},
+	letterWithSpaceContainer:{
+		width: 25, 
+		height: 25, 
 	}
+
+
 };
 
 export default GuessImage;
