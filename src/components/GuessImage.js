@@ -2,12 +2,17 @@ import React, { Component }  from 'react';
 import { 
 	View, 
 	Text,
-	TouchableHighlight,
+    TouchableHighlight,
+    Dimensions,
 	Image
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 import CONST from '../../global-config'
+
+var { width } = Dimensions.get('window');
+var third_width = width / 3;
+var fourth_width = width / 4;
 
 import { adivinanzas } from '../imageComponent/adivinanzas.js';
 import { logos } from '../imageComponent/logos.js';
@@ -25,23 +30,23 @@ class GuessImage extends Component {
 	  super(props);
 	}
 	
-	wordToGues(str) {
-		answer = str.split("|");
-		return answer.map((key, i) => {
-			word = answer[i].split(""),
-			 (<View style={{flexDirection: 'row'}}>
-				return answer.map(()=>{
-					 <Text style={{borderWidth: 2, borderColor: '#000', borderRadius: 5, width: 23, height: 23, backgroundColor: '#fff', marginRight: 1}}></Text>
-				}
-			</View>)
-		});
+	wordToGuess2(str) {
+        word = str.split("");
+        return word.map((key, idx) => {
+            <Text id={idx} style={{ borderWidth: 2, borderColor: '#000', borderRadius: 5, width: 25, height: 25, backgroundColor: '#fff', marginRight: 1 }}>{key}</Text>
+        });
 	}
 
-	wordToGues2(str) {
+	wordToGuess(str) {
 		answer = str.split("|");
-		answer.forEach((key, idx) => {
-			console.log('key: ', key, ' idx: ', idx)
-			//word = answer[i].split(""),
+		answer.forEach((key, i) => {
+			console.log('key: ', key, ' id: ', i)
+            word = answer[i].split("");
+            <View style={{ flexDirection: 'row' }}>
+                return answer.forEach((key, i) => {
+                     <Text style={{ borderWidth: 2, borderColor: '#000', borderRadius: 5, width: 23, height: 23, backgroundColor: '#fff', marginRight: 1 }}></Text>
+                });
+            </View>
 		});
 	}
 
@@ -75,8 +80,10 @@ class GuessImage extends Component {
 					<Image
 						style={styles.imageToGuess}
 						source={imageCategory(this.props.image_to_guess.level)} />
-				</View>
-				<View style={{flexDirection:'row', justifyContent:'center', flex: 4,}}>{this.wordToGues2(this.props.image_to_guess.answer.respuesta)}</View>
+                </View>
+                <View style={{ flexDirection: 'row', justifyContent: 'center', flex: 2, height: 30, width: third_width*2, backgroundColor: 'yellow' }}>
+                    {this.wordToGuess2(this.props.image_to_guess.answer.respuesta)}
+                </View>
 			</View>
 		);
 	}
@@ -102,18 +109,19 @@ const styles = {
 		height: 60
 	},
 	close: {
-		width: 60,
-		height: 60
+        width: fourth_width / 2,
+        height: fourth_width / 2
 	},
-	headerTitle: {
-		width: 180,
+    headerTitle: {
+        width: fourth_width * 2,
 		height: 45,
 		top: 15,
-		position: 'relative',
+        position: 'relative',
+        resizeMode: 'contain',
 	},
 	clock: {
-		width: 65,
-		height: 65,
+        width: fourth_width / 2,
+        height: fourth_width / 2,
 		position: 'absolute',
 		right: 8,
 		top: 8,
@@ -124,10 +132,10 @@ const styles = {
 		paddingBottom: 5,
 	},
 	imageToGuess: {
-		width: 230,
-		height: 230,
+        width: third_width*2,
+        height: third_width*2,
 		borderWidth: 7,
-		borderColor: '#000',
+        borderColor: '#000',
 	}
 };
 
