@@ -7,7 +7,7 @@ import Categories from './components/Categories';
 
 const RouterComponent = (props) => {
     return (
-        <Router sceneStyle={{ paddingTop: 15 }}>
+        <Router sceneStyle={{ paddingTop: 0 }}>
             <Scene hideNavBar={true}>
                 <Scene key="splash" component={Splash} hideNavBar={true} />
                 <Scene key="game_bucket" >

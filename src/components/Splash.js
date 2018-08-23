@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, StatusBar, Button } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 const Splash = () => {
 	return(
 		<View style={styles.containerSectionStyle}>
+			<StatusBar hidden={true} />
 			<Button onPress={() => Actions.game_bucket()} title="Jugar">Jugar</Button>
 		</View>
 	);

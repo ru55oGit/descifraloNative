@@ -2,8 +2,12 @@ import React, { Component }  from 'react';
 import { 
 	View, 
 	Text,
-    TouchableHighlight,
-    Dimensions,
+	TouchableHighlight,
+	TouchableWithoutFeedback,
+	Dimensions,
+	Keyboard,
+	TextInput,
+	Alert,
 	Image
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
@@ -30,22 +34,32 @@ class GuessImage extends Component {
 	constructor(props){
 	  super(props);
 	}
-	//anda bien
-	wordToGuess(str) {
-		console.log(str);
-		word = str.split("");
-		return word.map((key) => (
-			<Text style={{borderWidth: 2, borderColor: '#000', borderRadius: 5, width: 23, height: 23, backgroundColor: '#fff', marginRight: 1}}></Text>
-		));
+
+	componentDidMount () {
+		this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this._keyboardDidShow);
+		this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide);
 	}
 
-	wordToGuess1(str) {
+	componentWillUnmount () {
+		this.keyboardDidShowListener.remove();
+		this.keyboardDidHideListener.remove();
+	}
+
+	_keyboardDidShow () {
+		console.log('Keyboard Shown');
+	}
+
+	_keyboardDidHide () {
+		console.log('Keyboard Hidden');
+	}
+
+	wordToGuess(str) {
 		let word,
 		answer = str.split("|");
-		return answer.map((key, id)	=> (
-			<View style={{flexDirection:'row', justifyContent:'center', marginTop: 5, marginBottom: 5}}>
+		return answer.map((k, id)	=> (
+			<View key={k} style={{flexDirection:'row', justifyContent:'center', marginTop: 5, marginBottom: 5}}>
 				{answer[id].split("").map((key) => (
-					<Text style={key==" "?styles.letterWithSpaceContainer:styles.letterContainer}>{key!=" "?"__":""}</Text>
+					<Text key={key} style={key==" "?styles.letterWithSpaceContainer:styles.letterContainer}>{key!=" "?"__":""}</Text>
 				))}
 			</View>
 		));
@@ -68,23 +82,26 @@ class GuessImage extends Component {
 			imageCategory = sombras;
 		}
 
-		return(
-			<View style={styles.containerSectionStyle}>
-				<View style={styles.headerContainer}>
-					<TouchableHighlight style={styles.closeContainer} onPress={() => Actions.pop()}>
-						<Image style={styles.close} source={require('../../assets/img/cerrar.png')} />
-					</TouchableHighlight>
-					<Image style={styles.headerTitle} source={require('../../assets/img/descifralo_title.png')} />
-					<Image style={styles.clock} source={require('../../assets/img/chrono.png')} />
-				</View>
-				<View style={styles.imageContainer}>
-					<Image
-						style={styles.imageToGuess}
-						source={imageCategory(this.props.image_to_guess.level)} />
-                </View>
-				<View style={{flexDirection:'column', justifyContent:'center',}}>{this.wordToGuess1(this.props.image_to_guess.answer.respuesta)}</View>
 
-			</View>
+		return(
+			<TouchableWithoutFeedback style={styles.containerSectionStyle} onPress={() => {this.openKeyboard.focus();}}>
+				<View style={styles.containerSectionStyle}>
+					<TextInput ref={(input) => { this.openKeyboard = input; }} style={{height: 0, opacity: 0}} />
+					<View style={styles.headerContainer}>
+						<TouchableHighlight style={styles.closeContainer} onPress={() => Actions.pop()}>
+							<Image style={styles.close} source={require('../../assets/img/cerrar.png')} />
+						</TouchableHighlight>
+						<Image style={styles.headerTitle} source={require('../../assets/img/descifralo_title.png')} />
+						<Image style={styles.clock} source={require('../../assets/img/chrono.png')} />
+					</View>
+					<View style={styles.imageContainer}>
+						<Image
+							style={styles.imageToGuess}
+							source={imageCategory(this.props.image_to_guess.level)} />
+					</View>
+					<View style={{flexDirection:'column', justifyContent:'center',}}>{this.wordToGuess(this.props.image_to_guess.answer.respuesta)}</View>
+				</View>
+			</TouchableWithoutFeedback>
 		);
 	}
 };
@@ -130,8 +147,8 @@ const styles = {
 		paddingBottom: 5,
 	},
 	imageToGuess: {
-        width: third_width*2,
-        height: third_width*2,
+        width: third_width*1.8,
+        height: third_width*1.8,
 		borderWidth: 7,
         borderColor: '#000',
 	},
