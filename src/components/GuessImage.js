@@ -86,7 +86,7 @@ class GuessImage extends Component {
 		return(
 			<TouchableWithoutFeedback style={styles.containerSectionStyle} onPress={() => {this.openKeyboard.focus();}}>
 				<View style={styles.containerSectionStyle}>
-					<TextInput ref={(input) => { this.openKeyboard = input; }} style={{height: 0, opacity: 0}} />
+					<TextInput ref={(input) => { this.openKeyboard = input; }} autoCorrect={false} keyboardType="visible-password" style={{height: 0, opacity: 0}} />
 					<View style={styles.headerContainer}>
 						<TouchableHighlight style={styles.closeContainer} onPress={() => Actions.pop()}>
 							<Image style={styles.close} source={require('../../assets/img/cerrar.png')} />
