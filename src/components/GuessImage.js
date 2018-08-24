@@ -33,11 +33,20 @@ var imageCategory;
 class GuessImage extends Component {
 	constructor(props){
 	  super(props);
+	  this.setState({rendered: true});
+	}
+	
+	state = {
+		keyboardState: false,
+		rendered: false,
+		letterPressed: '',
+		correctLetters: '',
+		wrongLetters: ''
 	}
 
 	componentDidMount () {
-		this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this._keyboardDidShow);
-		this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide);
+		this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this._keyboardDidShow.bind(this));
+		this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide.bind(this));
 	}
 
 	componentWillUnmount () {
@@ -47,22 +56,53 @@ class GuessImage extends Component {
 
 	_keyboardDidShow () {
 		console.log('Keyboard Shown');
+		this.setState({keyboardState: true});
 	}
 
 	_keyboardDidHide () {
 		console.log('Keyboard Hidden');
+		this.setState({keyboardState: false});
 	}
 
-	wordToGuess(str) {
-		let word,
-		answer = str.split("|");
-		return answer.map((k, id)	=> (
-			<View key={k} style={{flexDirection:'row', justifyContent:'center', marginTop: 5, marginBottom: 5}}>
-				{answer[id].split("").map((key) => (
-					<Text key={key} style={key==" "?styles.letterWithSpaceContainer:styles.letterContainer}>{key!=" "?"__":""}</Text>
+	wordToGuess() {
+		console.log(this.state.rendered);
+		console.log(this.state.correctLetters);
+		let word, answer;
+		if (this.state.rendered) {
+			answer = this.state.correctLetters.split("|");
+		} else {
+			answer = this.props.image_to_guess.answer.respuesta.split("|");
+		}
+
+		return answer.map((k, id) => (
+			<View key={id} style={{flexDirection:'row', justifyContent:'center', marginTop: 5, marginBottom: 5}}>
+				{answer[id].split("").map((key, idx) => (
+					<Text key={idx} 
+							style={key==" "?styles.letterWithSpaceContainer:styles.letterContainer}>
+							{this.state.rendered? key.toUpperCase():key==" "?"":"_"}</Text>
 				))}
 			</View>
 		));
+	}
+
+	handleKeyboard(letter) {
+		this.setState({rendered: true});
+		let answer = this.props.image_to_guess.answer.respuesta,
+		result= this.state.correctLetters.split("");
+		
+		for (var i=0; i<answer.length; i++) {			
+			if (answer.charAt(i).toUpperCase() != letter.toUpperCase() && result[i] != letter.toUpperCase()) {
+				if (answer.charAt(i) == "|")
+					result[i] = "|";
+				else
+					result[i] = "_";
+			} else {
+				result[i] = answer.charAt(i);
+			}
+		}
+
+		this.setState({correctLetters: result.toString().replace(/,/g,"")});
+		this.openKeyboard.clear()
 	}
 
 	render() {
@@ -82,11 +122,14 @@ class GuessImage extends Component {
 			imageCategory = sombras;
 		}
 
-
 		return(
-			<TouchableWithoutFeedback style={styles.containerSectionStyle} onPress={() => {this.openKeyboard.focus();}}>
+			<TouchableWithoutFeedback style={styles.containerSectionStyle} onPress={() => {this.state.keyboardState? Keyboard.dismiss(): this.openKeyboard.focus();}}>
 				<View style={styles.containerSectionStyle}>
-					<TextInput ref={(input) => { this.openKeyboard = input; }} autoCorrect={false} keyboardType="visible-password" style={{height: 0, opacity: 0}} />
+					<TextInput ref={(input) => { this.openKeyboard = input; }} 
+							   autoCorrect={false} 
+							   keyboardType="visible-password" 
+							   style={{height: 0, opacity: 0}} 
+							   onChangeText={(text) => this.handleKeyboard(text)}/>
 					<View style={styles.headerContainer}>
 						<TouchableHighlight style={styles.closeContainer} onPress={() => Actions.pop()}>
 							<Image style={styles.close} source={require('../../assets/img/cerrar.png')} />
@@ -99,7 +142,7 @@ class GuessImage extends Component {
 							style={styles.imageToGuess}
 							source={imageCategory(this.props.image_to_guess.level)} />
 					</View>
-					<View style={{flexDirection:'column', justifyContent:'center',}}>{this.wordToGuess(this.props.image_to_guess.answer.respuesta)}</View>
+					<View style={{flexDirection:'column', justifyContent:'center',}}>{this.wordToGuess()}</View>
 				</View>
 			</TouchableWithoutFeedback>
 		);
@@ -161,7 +204,7 @@ const styles = {
 		textAlign: 'center',
 		backgroundColor: '#fff', 
 		paddingBottom: 0,
-		paddingTop: 4,
+		paddingTop: 3,
 		marginRight: 1
 	},
 	letterWithSpaceContainer:{
