@@ -103,6 +103,9 @@ class GuessImage extends Component {
 			}
 		}
 		this.setState({correctLetters: result.toString().replace(/,/g,"")});
+		if (result.toString().indexOf("_")<0) {
+			Keyboard.dismiss();
+		}
 		this.openKeyboard.clear()
 	}
 
