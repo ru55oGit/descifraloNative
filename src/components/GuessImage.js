@@ -40,7 +40,7 @@ class GuessImage extends Component {
 		keyboardState: false,
 		rendered: false,
 		letterPressed: '',
-		correctLetters: '',
+		correctLetters: '_',
 		wrongLetters: ''
 	}
 
@@ -65,8 +65,6 @@ class GuessImage extends Component {
 	}
 
 	wordToGuess() {
-		console.log(this.state.rendered);
-		console.log(this.state.correctLetters);
 		let word, answer;
 		if (this.state.rendered) {
 			answer = this.state.correctLetters.split("|");
@@ -88,19 +86,22 @@ class GuessImage extends Component {
 	handleKeyboard(letter) {
 		this.setState({rendered: true});
 		let answer = this.props.image_to_guess.answer.respuesta,
-		result= this.state.correctLetters.split("");
-		
-		for (var i=0; i<answer.length; i++) {			
-			if (answer.charAt(i).toUpperCase() != letter.toUpperCase() && result[i] != letter.toUpperCase()) {
-				if (answer.charAt(i) == "|")
-					result[i] = "|";
-				else
+		result = this.state.correctLetters.split("");
+		for (var i=0; i < answer.length; i++) {			
+			if (answer.charAt(i).toUpperCase() != letter.toUpperCase()) {
+				if (result[i] == undefined) {
 					result[i] = "_";
+				}
+				if (answer.charAt(i) == "|") {
+					result[i] = "|";
+				}
+				if (answer.charAt(i) == " ") {
+					result[i] = " ";
+				}
 			} else {
 				result[i] = answer.charAt(i);
 			}
 		}
-
 		this.setState({correctLetters: result.toString().replace(/,/g,"")});
 		this.openKeyboard.clear()
 	}
