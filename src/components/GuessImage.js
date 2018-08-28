@@ -206,7 +206,8 @@ const styles = {
 		backgroundColor: '#fff', 
 		paddingBottom: 0,
 		paddingTop: 3,
-		marginRight: 1
+		marginRight: 1,
+		overflow: 'hidden',
 	},
 	letterWithSpaceContainer:{
 		width: 25, 
