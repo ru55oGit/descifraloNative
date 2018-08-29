@@ -30,12 +30,13 @@ import { aleatorio } from '../imageComponent/aleatorio.js';
 
 var imageCategory;
 
+
+
 class GuessImage extends Component {
 	constructor(props){
 	  super(props);
-	  this.setState({rendered: true});
 	}
-	
+
 	state = {
 		keyboardState: false,
 		rendered: false,
@@ -43,7 +44,7 @@ class GuessImage extends Component {
 		correctLetters: '_',
 		wrongLetters: ''
 	}
-
+	
 	componentDidMount () {
 		this.keyboardDidShowListener = Keyboard.addListener('keyboardDidShow', this._keyboardDidShow.bind(this));
 		this.keyboardDidHideListener = Keyboard.addListener('keyboardDidHide', this._keyboardDidHide.bind(this));
@@ -203,8 +204,8 @@ const styles = {
 		borderWidth: 2, 
 		borderColor: '#000', 
 		borderRadius: 6, 
-		width: 25, 
-		height: 25, 
+		width: 24, 
+		height: 24, 
 		textAlign: 'center',
 		backgroundColor: '#fff', 
 		paddingBottom: 0,
