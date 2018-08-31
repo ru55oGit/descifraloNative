@@ -25,7 +25,6 @@ class Splash extends Component {
 
 	timer() {
 		this.setState({showClover: this.state.showClover-1});
-		console.log(this.state.showClover)
 		if (this.state.showClover < 1) {
 			this.setState({showClover: 1});
 			clearInterval(this.clearClover);
@@ -64,9 +63,10 @@ const styles = {
 	},
 	trebol: {
 		position: 'absolute',
-		width: 50,
-		height: 68,
-		top: 75,
+		width: 38,
+		height: 56,
+		top: 85,
+		resizeMode: 'contain',
 	}
 };
 
