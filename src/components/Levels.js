@@ -85,7 +85,7 @@ class Levels extends Component {
 
 		setTimeout(() => {
 			this.setState({showLoader: false});
-		}, DataCategory.listado.length * 10 * 1.5);
+		}, DataCategory.listado.length * 25);
 
 		if (!this.state.isReady) {
 			return <AppLoading />;
