@@ -7,7 +7,8 @@ import { View,
          FlatList,
 		 Dimensions,
 		 Image,
-		 TouchableHighlight
+		 TouchableHighlight,
+		 ActivityIndicator
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { AppLoading, Font } from 'expo';
@@ -36,21 +37,28 @@ var imageCategory, DataCategory;
 var { width } = Dimensions.get('window');
 var half_width = width/4;
 
-
 class Levels extends Component {
-	state = {
-		isReady: false,
-		switchState: true
-	};
+	constructor(props){
+		super(props);
+		this.state = {
+			isReady: false,
+			switchState: true,
+			showLoader: true,
+		}
+	}
+
+
+	componentDidMount () {
+		
+	}
 
 	async componentWillMount() {
 		await Font.loadAsync({
 			'lobster' : require('../../assets/fonts/lobster-two.italic.ttf')
 		});
-
 		this.setState({isReady: true});
 	}
-	
+
 	render() {
 		if (this.props.category == CONST.CATEGORY.ADIVINANZAS) {
 			imageCategory = adivinanzas;
@@ -75,6 +83,10 @@ class Levels extends Component {
 			DataCategory = DataSombras;
 		}
 
+		setTimeout(() => {
+			this.setState({showLoader: false});
+		}, DataCategory.listado.length * 10 * 1.5);
+
 		if (!this.state.isReady) {
 			return <AppLoading />;
 		}
@@ -86,24 +98,23 @@ class Levels extends Component {
 					</TouchableHighlight>
 					<Text style={styles.headerTitle}>Elige el nivel</Text>
 				</View>
-                <ScrollView>
-                    <FlatList
-                        data={DataCategory.listado}
-						numColumns={4}
-                        keyExtractor={item => item.respuesta}
-						renderItem={({item, index}) =>
+				{this.state.showLoader && <ActivityIndicator style={styles.spinner} size={80} color="#000000" />}
+				<FlatList
+					data={DataCategory.listado}
+					numColumns={4}
+					keyExtractor={item => item.respuesta}
+					renderItem={({item, index}) => (
 							<TouchableHighlight
 								style={styles.levelContainer}
 								onPress={() => Actions.guess({image_to_guess:{level: index+1, answer: item, category: this.props.category}})}>
-								<ImageBackground key={index} 
-										style={styles.level}
-										source={imageCategory(index+1)}>
-									<Text style={styles.textLevel}>{index+1}</Text>
-								</ImageBackground>
+									<ImageBackground key={index} 
+											style={styles.level}
+											source={imageCategory(index+1)}>
+										<Text style={styles.textLevel}>{index+1}</Text>
+									</ImageBackground>		
 							</TouchableHighlight>
-                        }
-                    />
-                </ScrollView>
+						)}
+				/>
 			</View>
 		);
 	}
@@ -116,7 +127,13 @@ const styles = {
         flexDirection: 'column',
         justifyContent: 'space-between',
         backgroundColor: '#fff'
-    },
+	},
+	spinner: {
+		zIndex: 1,
+		position: 'absolute',
+		top: '50%',
+		marginTop: -50,
+	},
     headerContainer: {
     	backgroundColor: CONST.COLOR.BACKGROUND_SPANISH,
     	alignSelf: 'stretch',
