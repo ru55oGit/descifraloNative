@@ -6,7 +6,8 @@ import {
     Image,
     Dimensions,
     Switch,
-    TouchableHighlight
+    TouchableHighlight,
+    AsyncStorage
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { AppLoading, Font } from 'expo';
@@ -45,6 +46,29 @@ class Categories extends Component {
         
         this.setState({isReady: true});
     }
+
+    async storeItem(key, item) {
+        try {
+            //we want to wait for the Promise returned by AsyncStorage.setItem()
+            //to be resolved to the actual value before returning the value
+            var jsonOfItem = await AsyncStorage.setItem("levelAcertijos", 2);
+            return jsonOfItem;
+        } catch (error) {
+            console.log(error.message);
+        }
+    }
+
+    async retrieveItem(key) {
+        try {
+            const retrievedItem = await AsyncStorage.getItem("levelAcertijos");
+            const item = JSON.parse(retrievedItem);
+            console.log(item)
+            return item;
+        } catch (error) {
+            console.log(error.message);
+        }
+        return
+    }
     
     toggleSwitch1 = (value) => {
         this.setState({ switchState: value })
@@ -52,6 +76,7 @@ class Categories extends Component {
     }
     
     render() {
+        { this.retrieveItem.bind(this) }
         if (!this.state.isReady) {
             return <AppLoading />
         }
