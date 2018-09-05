@@ -43,40 +43,19 @@ class Categories extends Component {
         await Font.loadAsync({
             'lobster' : require ('../../assets/fonts/lobster-two.italic.ttf')
         });
-        
+
+        let a = await AsyncStorage.getItem(CONST.LEVEL_SELECTED.ADIVINANZAS).then((result) => {if (result) {try {result = JSON.parse(result);console.log("result: ",result);} catch (e) {}}return result;});
+        console.log("levelSelected",a);
         this.setState({isReady: true});
+        this.setState({levelAcertijos: a});
     }
 
-    async storeItem(key, item) {
-        try {
-            //we want to wait for the Promise returned by AsyncStorage.setItem()
-            //to be resolved to the actual value before returning the value
-            var jsonOfItem = await AsyncStorage.setItem("levelAcertijos", 2);
-            return jsonOfItem;
-        } catch (error) {
-            console.log(error.message);
-        }
-    }
-
-    async retrieveItem(key) {
-        try {
-            const retrievedItem = await AsyncStorage.getItem("levelAcertijos");
-            const item = JSON.parse(retrievedItem);
-            console.log(item)
-            return item;
-        } catch (error) {
-            console.log(error.message);
-        }
-        return
-    }
-    
     toggleSwitch1 = (value) => {
         this.setState({ switchState: value })
         console.log(value);
     }
     
     render() {
-        { this.retrieveItem.bind(this) }
         if (!this.state.isReady) {
             return <AppLoading />
         }

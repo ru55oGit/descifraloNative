@@ -25,5 +25,15 @@ export default {
         ESCUDOS: 'escudos',
         SOMBRAS: 'sombras',
         ALEATORIO: 'aleatorio'
+    },
+    LEVEL_SELECTED: {
+        ADIVINANZAS: 'levelAdivinanzas',
+        LOGOS: 'levelLogos',
+        PELICULAS: 'levelPeliculas',
+        FAMOSOS: 'levelFamosos',
+        EMOJIS: 'levelEmojis',
+        ESCUDOS: 'levelEscudos',
+        SOMBRAS: 'levelSombras',
+        ALEATORIO: 'levelAleatorio'
     }
   };

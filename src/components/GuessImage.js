@@ -8,7 +8,8 @@ import {
 	Keyboard,
 	TextInput,
 	Alert,
-	Image
+	Image,
+	AsyncStorage
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
@@ -65,6 +66,11 @@ class GuessImage extends Component {
 		this.setState({keyboardState: false});
 	}
 
+	async setItem(key, value) {
+		await AsyncStorage.setItem(key, value);
+		console.log("value: ",value)
+	}
+
 	wordToGuess() {
 		let word, answer;
 		if (this.state.rendered) {
@@ -104,8 +110,9 @@ class GuessImage extends Component {
 			}
 		}
 		this.setState({correctLetters: result.toString().replace(/,/g,"")});
-		if (result.toString().indexOf("_")<0) {
+		if (result.toString().indexOf("_") < 0) {
 			Keyboard.dismiss();
+			this.setItem(CONST.LEVEL_SELECTED.ADIVINANZAS, this.state.level+1);
 		}
 		this.openKeyboard.clear()
 	}
