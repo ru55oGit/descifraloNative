@@ -43,7 +43,8 @@ class GuessImage extends Component {
 		rendered: false,
 		letterPressed: '',
 		correctLetters: '_',
-		wrongLetters: ''
+		wrongLetters: '',
+		levelReached: ''
 	}
 	
 	componentDidMount () {
@@ -54,6 +55,7 @@ class GuessImage extends Component {
 	componentWillUnmount () {
 		this.keyboardDidShowListener.remove();
 		this.keyboardDidHideListener.remove();
+		this.setLevelByCategory(CONST.LEVEL_SELECTED.ADIVINANZAS, this.state.levelReached);
 	}
 
 	_keyboardDidShow () {
@@ -66,8 +68,12 @@ class GuessImage extends Component {
 		this.setState({keyboardState: false});
 	}
 
-	async setItem(key, value) {
-		await AsyncStorage.setItem(key, value);
+	async setLevelByCategory(key, value) {
+		try {
+			await AsyncStorage.setItem(key, value.toString());
+		} catch (e) {
+			console.log("error gi", e)
+		}
 		console.log("value: ",value)
 	}
 
@@ -112,7 +118,8 @@ class GuessImage extends Component {
 		this.setState({correctLetters: result.toString().replace(/,/g,"")});
 		if (result.toString().indexOf("_") < 0) {
 			Keyboard.dismiss();
-			this.setItem(CONST.LEVEL_SELECTED.ADIVINANZAS, this.state.level+1);
+			this.setState({levelReached: this.props.image_to_guess.level+1});
+			
 		}
 		this.openKeyboard.clear()
 	}

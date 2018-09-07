@@ -23,7 +23,6 @@ import { escudos } from '../imageComponent/escudos.js';
 import { sombras } from '../imageComponent/sombras.js';
 import { aleatorio } from '../imageComponent/aleatorio.js';
 
-
 var { width } = Dimensions.get('window');
 var half_width = width/2;
 
@@ -43,11 +42,44 @@ class Categories extends Component {
         await Font.loadAsync({
             'lobster' : require ('../../assets/fonts/lobster-two.italic.ttf')
         });
-
-        let a = await AsyncStorage.getItem(CONST.LEVEL_SELECTED.ADIVINANZAS).then((result) => {if (result) {try {result = JSON.parse(result);console.log("result: ",result);} catch (e) {}}return result;});
-        console.log("levelSelected",a);
+        
         this.setState({isReady: true});
-        this.setState({levelAcertijos: a});
+        this.setLevelByCategory(CONST.LEVEL_SELECTED.ADIVINANZAS);
+        this.setLevelByCategory(CONST.LEVEL_SELECTED.LOGOS);
+        this.setLevelByCategory(CONST.LEVEL_SELECTED.PELICULAS);
+        this.setLevelByCategory(CONST.LEVEL_SELECTED.FAMOSOS);
+        this.setLevelByCategory(CONST.LEVEL_SELECTED.EMOJIS);
+        this.setLevelByCategory(CONST.LEVEL_SELECTED.ESCUDOS);
+        this.setLevelByCategory(CONST.LEVEL_SELECTED.SOMBRAS);
+    }
+
+    setLevelByCategory(key) {
+        try {
+            AsyncStorage.getItem(key).then((result) => {
+                if (result) {
+                        result = JSON.parse(result);
+                } else {
+                    result = 1;
+                }
+                if (key == CONST.LEVEL_SELECTED.ADIVINANZAS) {
+                    this.setState({levelAcertijos: result});
+                } else if (key == CONST.LEVEL_SELECTED.LOGOS) {
+                    this.setState({levelLogos: result});
+                } else if (key == CONST.LEVEL_SELECTED.PELICULAS) {
+                    this.setState({levelPeliculas: result});
+                } else if (key == CONST.LEVEL_SELECTED.FAMOSOS) {
+                    this.setState({levelFamosos: result});
+                } else if (key == CONST.LEVEL_SELECTED.EMOJIS) {
+                    this.setState({levelEmojis: result});
+                } else if (key == CONST.LEVEL_SELECTED.ESCUDOS) {
+                    this.setState({levelEscudos: result});
+                }  else if (key == CONST.LEVEL_SELECTED.SOMBRAS) {
+                    this.setState({levelSombras: result});
+                }
+            }).done();
+        } catch (e) {
+            console.log("error",e)
+        }
     }
 
     toggleSwitch1 = (value) => {
