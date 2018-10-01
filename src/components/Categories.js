@@ -31,6 +31,7 @@ class Categories extends Component {
         super(props);
     }
     state = {
+        levelReached: '',
         isReady: false,
         levelAcertijos: 1,
         levelLogos: 1,
@@ -39,6 +40,9 @@ class Categories extends Component {
         levelEmojis: 1,
         levelEscudos: 1,
         levelSombras: 1
+    }
+    constructor(props){
+        super(props);
     }
     
     async componentWillMount() {
@@ -55,18 +59,39 @@ class Categories extends Component {
         this.setLevelByCategory(CONST.LEVEL_SELECTED.ESCUDOS);
         this.setLevelByCategory(CONST.LEVEL_SELECTED.SOMBRAS);
     }
-
-    /*shouldComponentUpdate(nextProps, nextState) {
-        console.log(this.props.reload)
-        return this.props.reload;
-    }*/
+    
+    componentWillReceiveProps(nextProps){
+        if (this.state.levelReached !== nextProps.levelReached) {
+            this.updateLevelByCategory(nextProps.category, nextProps.levelReached);
+        }
+    }
 
     componentWillReceiveProps(nextProps) {
         console.log(nextProps)
         return this.props.reload;
-
     }
 
+
+    // Cuando hago back, agarro los props y seteo el nuevo state
+    updateLevelByCategory(category, level) {
+        if (category == CONST.CATEGORY.ADIVINANZAS) {
+            this.setState({levelAcertijos: level});
+        } else if (category == CONST.CATEGORY.LOGOS) {
+            this.setState({levelLogos: level});
+        } else if (category == CONST.CATEGORY.PELICULAS) {
+            this.setState({levelPeliculas: level});
+        } else if (category == CONST.CATEGORY.FAMOSOS) {
+            this.setState({levelFamosos: level});
+        } else if (category == CONST.CATEGORY.EMOJIS) {
+            this.setState({levelEmojis: level});
+        } else if (category == CONST.CATEGORY.ESCUDOS) {
+            this.setState({levelEscudos: level});
+        }  else if (category == CONST.CATEGORY.SOMBRAS) {
+            this.setState({levelSombras: level});
+        }
+    }
+    // Cuando se monta el componente, consulto el AsyncStorage 
+    // y traigo el nivel guardado
     setLevelByCategory(key) {
         try {
             AsyncStorage.getItem(key).then((result) => {
@@ -125,8 +150,8 @@ class Categories extends Component {
                         <TouchableHighlight
                             onPress={() => Actions.levels({level: this.state.levelAcertijos, category: CONST.CATEGORY.ADIVINANZAS}) }>
                             <Image 
-                            style={styles.img}
-                            source={adivinanzas(this.state.levelAcertijos)} />
+                                style={styles.img}
+                                source={adivinanzas(this.state.levelAcertijos)} />
                         </TouchableHighlight>
                     </View>
                     <View style={styles.rowContainer}>

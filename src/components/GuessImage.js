@@ -44,7 +44,8 @@ class GuessImage extends Component {
 		letterPressed: '',
 		correctLetters: '_',
 		wrongLetters: '',
-		levelReached: ''
+		levelReached: '',
+		category: ''
 	}
 	
 	componentDidMount () {
@@ -55,7 +56,8 @@ class GuessImage extends Component {
 	componentWillUnmount () {
 		this.keyboardDidShowListener.remove();
 		this.keyboardDidHideListener.remove();
-		this.setLevelByCategory(CONST.LEVEL_SELECTED.ADIVINANZAS, this.state.levelReached);
+		this.setLevelByCategory(this.props.image_to_guess.category, this.state.levelReached);
+		Actions.levels({levelReached: this.state.levelReached,category: this.props.image_to_guess.category});
 	}
 
 	_keyboardDidShow () {
@@ -69,12 +71,27 @@ class GuessImage extends Component {
 	}
 
 	async setLevelByCategory(key, value) {
+		var category;
+		if (key == CONST.CATEGORY.ADIVINANZAS) {
+            category = CONST.LEVEL_SELECTED.ADIVINANZAS
+        } else if (key == CONST.CATEGORY.LOGOS) {
+            category = CONST.LEVEL_SELECTED.LOGOS
+        } else if (key == CONST.CATEGORY.PELICULAS) {
+            category = CONST.LEVEL_SELECTED.PELICULAS
+        } else if (key == CONST.CATEGORY.FAMOSOS) {
+            category = CONST.LEVEL_SELECTED.FAMOSOS
+        } else if (key == CONST.CATEGORY.EMOJIS) {
+            category = CONST.LEVEL_SELECTED.EMOJIS
+        } else if (key == CONST.CATEGORY.ESCUDOS) {
+            category = CONST.LEVEL_SELECTED.ESCUDOS
+        }  else if (key == CONST.CATEGORY.SOMBRAS) {
+            category = CONST.LEVEL_SELECTED.SOMBRAS
+		}
 		try {
-			await AsyncStorage.setItem(key, value.toString());
+			await AsyncStorage.setItem(category, value.toString());
 		} catch (e) {
 			console.log("error gi", e)
 		}
-		console.log("value: ",value)
 	}
 
 	wordToGuess() {
@@ -119,7 +136,6 @@ class GuessImage extends Component {
 		if (result.toString().indexOf("_") < 0) {
 			Keyboard.dismiss();
 			this.setState({levelReached: this.props.image_to_guess.level+1});
-			
 		}
 		this.openKeyboard.clear()
 	}
@@ -150,7 +166,7 @@ class GuessImage extends Component {
 							   style={{height: 0, opacity: 0}} 
 							   onChangeText={(text) => this.handleKeyboard(text)}/>
 					<View style={styles.headerContainer}>
-						<TouchableHighlight style={styles.closeContainer} onPress={() => Actions.pop()}>
+						<TouchableHighlight style={styles.closeContainer} onPress={() => Actions.levels({levelReached: this.state.levelReached,category: this.props.image_to_guess.category})}>
 							<Image style={styles.close} source={require('../../assets/img/cerrar.png')} />
 						</TouchableHighlight>
 						<Image style={styles.headerTitle} source={require('../../assets/img/descifralo_title.png')} />

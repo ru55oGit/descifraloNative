@@ -38,17 +38,14 @@ var { width } = Dimensions.get('window');
 var half_width = width/4;
 
 class Levels extends Component {
+	state = {
+		isReady: false,
+		switchState: true,
+		showLoader: true,
+		levelReached: '',
+	}
 	constructor(props){
 		super(props);
-		this.state = {
-			isReady: false,
-			switchState: true,
-			showLoader: true,
-		}
-	}
-
-	componentDidMount () {
-		
 	}
 
 	async componentWillMount() {
@@ -57,6 +54,12 @@ class Levels extends Component {
 		});
 		this.setState({isReady: true});
 	}
+
+	componentWillReceiveProps(nextProps){
+        if (this.state.levelReached !== nextProps.levelReached) {
+			this.setState({levelReached: nextProps.levelReached});
+        }
+    }
 
 	render() {
 		if (this.props.category == CONST.CATEGORY.ADIVINANZAS) {
@@ -92,7 +95,7 @@ class Levels extends Component {
 		return(
 			<View style={styles.containerSectionStyle}>
 				<View style={styles.headerContainer}>
-                    <TouchableHighlight style={styles.arrowBackContainer} onPress={() => Actions.pop({ reload: true})}>
+					<TouchableHighlight style={styles.arrowBackContainer} onPress={() => Actions.categories({levelReached: this.state.levelReached, category: this.props.category})}>
 						<Image style={styles.arrowBack} source={require('../../assets/img/arrowback.png')} />
 					</TouchableHighlight>
 					<Text style={styles.headerTitle}>Elige el nivel</Text>
