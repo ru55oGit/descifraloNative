@@ -47,7 +47,6 @@ class Levels extends Component {
 		}
 	}
 
-
 	componentDidMount () {
 		
 	}
@@ -93,28 +92,29 @@ class Levels extends Component {
 		return(
 			<View style={styles.containerSectionStyle}>
 				<View style={styles.headerContainer}>
-					<TouchableHighlight style={styles.arrowBackContainer} onPress={() => Actions.pop()}>
+                    <TouchableHighlight style={styles.arrowBackContainer} onPress={() => Actions.pop({ reload: true})}>
 						<Image style={styles.arrowBack} source={require('../../assets/img/arrowback.png')} />
 					</TouchableHighlight>
 					<Text style={styles.headerTitle}>Elige el nivel</Text>
 				</View>
 				{this.state.showLoader && <ActivityIndicator style={styles.spinner} size={80} color="#000000" />}
 				<FlatList
-					data={DataCategory.listado}
-					numColumns={4}
-					keyExtractor={item => item.respuesta}
-					renderItem={({item, index}) => (
-							<TouchableHighlight
-								style={styles.levelContainer}
-								onPress={() => Actions.guess({image_to_guess:{level: index+1, answer: item, category: this.props.category}})}>
-									<ImageBackground key={index} 
-											style={styles.level}
-											source={imageCategory(index+1)}>
-										<Text style={styles.textLevel}>{index+1}</Text>
-									</ImageBackground>		
-							</TouchableHighlight>
-						)}
-				/>
+                    data={DataCategory.listado}
+                    numColumns={4}
+                    keyExtractor={item => item.respuesta}
+                    renderItem={({ item, index }) => (
+                        <TouchableHighlight
+                            style={styles.levelContainer}
+                            onPress={() => (index + 1 <= this.props.level) ? Actions.guess({ image_to_guess: { level: index + 1, answer: item, category: this.props.category } }):""}>
+                            <ImageBackground key={index}
+                                style={(index + 1 <= this.props.level) ? styles.level : styles.levelOff}
+                                source={imageCategory(index + 1)}>
+                                <Text style={styles.textLevel}>{index + 1}</Text>
+                            </ImageBackground>
+                        </TouchableHighlight>
+                            
+                    )}
+                />
 			</View>
 		);
 	}
@@ -169,6 +169,12 @@ const styles = {
     level: {
 		width: half_width,
 		height: half_width,
+    },
+    levelOff: {
+        width: half_width,
+        height: half_width,
+        opacity: .5,
+        backgroundColor: '#000',
     },
     textLevel: {
     	fontFamily: 'lobster',

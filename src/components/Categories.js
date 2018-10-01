@@ -27,6 +27,9 @@ var { width } = Dimensions.get('window');
 var half_width = width/2;
 
 class Categories extends Component {
+    constructor(props) {
+        super(props);
+    }
     state = {
         isReady: false,
         levelAcertijos: 1,
@@ -53,11 +56,22 @@ class Categories extends Component {
         this.setLevelByCategory(CONST.LEVEL_SELECTED.SOMBRAS);
     }
 
+    /*shouldComponentUpdate(nextProps, nextState) {
+        console.log(this.props.reload)
+        return this.props.reload;
+    }*/
+
+    componentWillReceiveProps(nextProps) {
+        console.log(nextProps)
+        return this.props.reload;
+
+    }
+
     setLevelByCategory(key) {
         try {
             AsyncStorage.getItem(key).then((result) => {
                 if (result) {
-                        result = JSON.parse(result);
+                    result = JSON.parse(result);
                 } else {
                     result = 1;
                 }
@@ -78,13 +92,12 @@ class Categories extends Component {
                 }
             }).done();
         } catch (e) {
-            console.log("error",e)
+            //console.log("error",e)
         }
     }
 
     toggleSwitch1 = (value) => {
         this.setState({ switchState: value })
-        console.log(value);
     }
     
     render() {
