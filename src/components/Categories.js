@@ -41,9 +41,6 @@ class Categories extends Component {
         levelEscudos: 1,
         levelSombras: 1
     }
-    constructor(props){
-        super(props);
-    }
     
     async componentWillMount() {
         await Font.loadAsync({
@@ -65,12 +62,6 @@ class Categories extends Component {
             this.updateLevelByCategory(nextProps.category, nextProps.levelReached);
         }
     }
-
-    componentWillReceiveProps(nextProps) {
-        console.log(nextProps)
-        return this.props.reload;
-    }
-
 
     // Cuando hago back, agarro los props y seteo el nuevo state
     updateLevelByCategory(category, level) {

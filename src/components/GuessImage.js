@@ -31,8 +31,6 @@ import { aleatorio } from '../imageComponent/aleatorio.js';
 
 var imageCategory;
 
-
-
 class GuessImage extends Component {
 	constructor(props){
 	  super(props);

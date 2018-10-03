@@ -33,61 +33,74 @@ import { escudos } from '../imageComponent/escudos.js';
 import { sombras } from '../imageComponent/sombras.js';
 import { aleatorio } from '../imageComponent/aleatorio.js';
 
-var imageCategory, DataCategory;
+var imageCategory;
 var { width } = Dimensions.get('window');
 var half_width = width/4;
 
 class Levels extends Component {
-	state = {
-		isReady: false,
-		switchState: true,
-		showLoader: true,
-		levelReached: '',
-	}
 	constructor(props){
 		super(props);
-	}
+    }
 
+    state = {
+        isReady: false,
+        switchState: true,
+        showLoader: true,
+        levelReached: '',
+        dataCategory: '',
+    }
+
+    componentDidMount() {
+        this.setData();
+    }
+    
 	async componentWillMount() {
 		await Font.loadAsync({
 			'lobster' : require('../../assets/fonts/lobster-two.italic.ttf')
 		});
-		this.setState({isReady: true});
+        this.setState({ isReady: true });
 	}
 
-	componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps) {
         if (this.state.levelReached !== nextProps.levelReached) {
-			this.setState({levelReached: nextProps.levelReached});
+            this.setState({ levelReached: nextProps.levelReached });
+            this.setData();
+        }
+    }
+    /**
+     * seteo la imagen y la palabra a adivinar basado en la categoria
+     * */
+    setData() {
+        if (this.props.category == CONST.CATEGORY.ADIVINANZAS) {
+            imageCategory = adivinanzas;
+            this.setState({ dataCategory: DataAcertijos });
+        } else if (this.props.category == CONST.CATEGORY.LOGOS) {
+            imageCategory = logos;
+            this.setState({ dataCategory: DataLogos });
+        } else if (this.props.category == CONST.CATEGORY.PELICULAS) {
+            imageCategory = peliculas;
+            this.setState({ dataCategory: DataPeliculas });
+        } else if (this.props.category == CONST.CATEGORY.FAMOSOS) {
+            imageCategory = famosos;
+            this.setState({ dataCategory: DataFamosos });
+        } else if (this.props.category == CONST.CATEGORY.EMOJIS) {
+            imageCategory = emojis;
+            this.setState({ dataCategory: DataEmojis });
+        } else if (this.props.category == CONST.CATEGORY.ESCUDOS) {
+            imageCategory = escudos;
+            this.setState({ dataCategory: DataEscudos });
+        } else if (this.props.category == CONST.CATEGORY.SOMBRAS) {
+            imageCategory = sombras;
+            this.setState({ dataCategory: DataSombras });
         }
     }
 
-	render() {
-		if (this.props.category == CONST.CATEGORY.ADIVINANZAS) {
-			imageCategory = adivinanzas;
-			DataCategory = DataAcertijos;
-		} else if (this.props.category == CONST.CATEGORY.LOGOS) {
-			imageCategory = logos;
-			DataCategory = DataLogos;
-		} else if (this.props.category == CONST.CATEGORY.PELICULAS) {
-			imageCategory = peliculas;
-			DataCategory = DataPeliculas;
-		} else if (this.props.category == CONST.CATEGORY.FAMOSOS) {
-			imageCategory = famosos;
-			DataCategory = DataFamosos;
-		} else if (this.props.category == CONST.CATEGORY.EMOJIS) {
-			imageCategory = emojis;
-			DataCategory = DataEmojis;
-		} else if (this.props.category == CONST.CATEGORY.ESCUDOS) {
-			imageCategory = escudos;
-			DataCategory = DataEscudos;
-		} else if (this.props.category == CONST.CATEGORY.SOMBRAS) {
-			imageCategory = sombras;
-			DataCategory = DataSombras;
-		}
-
+    render() {
+        let list= this.state.dataCategory;
 		setTimeout(() => {
-			this.setState({showLoader: false});
-		}, DataCategory.listado.length * 25);
+            this.setState({ showLoader: false });
+        }, list.length * 25);
+        console.log(list.length)
 
 		if (!this.state.isReady) {
 			return <AppLoading />;
@@ -102,7 +115,7 @@ class Levels extends Component {
 				</View>
 				{this.state.showLoader && <ActivityIndicator style={styles.spinner} size={80} color="#000000" />}
 				<FlatList
-                    data={DataCategory.listado}
+                    data={this.state.dataCategory.listado}
                     numColumns={4}
                     keyExtractor={item => item.respuesta}
                     renderItem={({ item, index }) => (
